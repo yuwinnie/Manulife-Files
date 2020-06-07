@@ -1,0 +1,40 @@
+issuing: !connect jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv '' [passwd stripped] 
+Connecting to jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv
+Connected to: Apache Hive (version 1.2.1000.2.6.5.149-2)
+Driver: Hive JDBC (version 1.2.1000.2.6.5.149-2)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> --MandatoryFields_No null values
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> select  acct,cusip,rr,pend_qty,cur_cost,seg_qty,memo_qty,memo_cost,short,last_dt,last_time,sf k_qty,off_qty,cost_stat,cost_stat_ovrd,cost_stat_ovrd_usr,cost_stat_calc,cost_stat_ovrd_memo
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> from    inv_aum_typed_qa.dpl_acpos 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> where   process_date = cast(regexp_replace(${t_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$ 2-$3') as date)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> and     (acct is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      cusip is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      rr is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      pend_qty is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      cur_cost is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      seg_qty is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      memo_qty is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      memo_cost is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      short is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      last_dt is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      last_time is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      sfk_qty is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      off_qty is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      cost_stat is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      cost_stat_ovrd is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      cost_stat_ovrd_usr is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      cost_stat_calc is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      cost_stat_ovrd_memo is null)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> limit 1;
+INFO  : Tez session hasn't been created yet. Opening session
+INFO  : Dag name: select  acct,cusip,rr,pend_qty,cur_cost,...1(Stage-1)
+INFO  : Status: Running (Executing on YARN cluster with App id application_1590256180930_1314)
+
+Getting log thread is interrupted, since query is done!
++-------+--------+-----+-----------+-----------+----------+-----------+------------+--------+----------+------------+----------+----------+------------+-----------------+---------------------+-----------------+----------------------+--+
+| acct  | cusip  | rr  | pend_qty  | cur_cost  | seg_qty  | memo_qty  | memo_cost  | short  | last_dt  | last_time  | sfk_qty  | off_qty  | cost_stat  | cost_stat_ovrd  | cost_stat_ovrd_usr  | cost_stat_calc  | cost_stat_ovrd_memo  |
++-------+--------+-----+-----------+-----------+----------+-----------+------------+--------+----------+------------+----------+----------+------------+-----------------+---------------------+-----------------+----------------------+--+
++-------+--------+-----+-----------+-----------+----------+-----------+------------+--------+----------+------------+----------+----------+------------+-----------------+---------------------+-----------------+----------------------+--+
+No rows selected (22.216 seconds)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+Closing: 0: jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv

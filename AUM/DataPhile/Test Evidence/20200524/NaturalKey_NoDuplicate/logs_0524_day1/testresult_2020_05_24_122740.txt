@@ -1,0 +1,106 @@
+Automation Test Run Start Time  2020_05_24_122740
+
+NaturalKey_NoDuplicate_01actran.hql
+
+Test Case NaturalKey_NoDuplicate_01actran.hql  Execution Start Time:  2020_05_24_122740
+Test Case NaturalKey_NoDuplicate_01actran.hql  Execution End Time:    2020_05_24_122812
+Test case NaturalKey_NoDuplicate_01actran.hql  is passed.
+
+NaturalKey_NoDuplicate_02gngnco.hql
+
+Test Case NaturalKey_NoDuplicate_02gngnco.hql  Execution Start Time:  2020_05_24_122812
+Test Case NaturalKey_NoDuplicate_02gngnco.hql  Execution End Time:    2020_05_24_122840
+Test case NaturalKey_NoDuplicate_02gngnco.hql  is passed.
+
+NaturalKey_NoDuplicate_03mfclac.hql
+
+Test Case NaturalKey_NoDuplicate_03mfclac.hql  Execution Start Time:  2020_05_24_122840
+Test Case NaturalKey_NoDuplicate_03mfclac.hql  Execution End Time:    2020_05_24_122923
+Test case NaturalKey_NoDuplicate_03mfclac.hql  is passed.
+
+NaturalKey_NoDuplicate_04mfclac.hql
+
+Test Case NaturalKey_NoDuplicate_04mfclac.hql  Execution Start Time:  2020_05_24_122923
+Test Case NaturalKey_NoDuplicate_04mfclac.hql  Execution End Time:    2020_05_24_123000
+Test case NaturalKey_NoDuplicate_04mfclac.hql  is passed.
+
+NaturalKey_NoDuplicate_05mfrr.hql
+
+Test Case NaturalKey_NoDuplicate_05mfrr.hql  Execution Start Time:  2020_05_24_123000
+Test Case NaturalKey_NoDuplicate_05mfrr.hql  Execution End Time:    2020_05_24_123036
+Test case NaturalKey_NoDuplicate_05mfrr.hql  is passed.
+
+NaturalKey_NoDuplicate_06esmgr.hql
+
+Test Case NaturalKey_NoDuplicate_06esmgr.hql  Execution Start Time:  2020_05_24_123036
+Test Case NaturalKey_NoDuplicate_06esmgr.hql  Execution End Time:    2020_05_24_123105
+Test case NaturalKey_NoDuplicate_06esmgr.hql  is passed.
+
+NaturalKey_NoDuplicate_07acpos.hql
+
+Test Case NaturalKey_NoDuplicate_07acpos.hql  Execution Start Time:  2020_05_24_123105
+Test Case NaturalKey_NoDuplicate_07acpos.hql  Execution End Time:    2020_05_24_123139
+Test case NaturalKey_NoDuplicate_07acpos.hql  is passed.
+
+NaturalKey_NoDuplicate_08gnexch.hql
+
+Test Case NaturalKey_NoDuplicate_08gnexch.hql  Execution Start Time:  2020_05_24_123139
+Test Case NaturalKey_NoDuplicate_08gnexch.hql  Execution End Time:    2020_05_24_123205
+Test case NaturalKey_NoDuplicate_08gnexch.hql  is passed.
+
+NaturalKey_NoDuplicate_09tpkptl.hql
+
+Test Case NaturalKey_NoDuplicate_09tpkptl.hql  Execution Start Time:  2020_05_24_123205
+Test Case NaturalKey_NoDuplicate_09tpkptl.hql  Execution End Time:    2020_05_24_123233
+Test case NaturalKey_NoDuplicate_09tpkptl.hql  is passed.
+
+NaturalKey_NoDuplicate_10mfclcl.hql
+
+Test Case NaturalKey_NoDuplicate_10mfclcl.hql  Execution Start Time:  2020_05_24_123233
+Test Case NaturalKey_NoDuplicate_10mfclcl.hql  Execution End Time:    2020_05_24_123300
+Test case NaturalKey_NoDuplicate_10mfclcl.hql  is passed.
+
+NaturalKey_NoDuplicate_11mfsc.hql
+
+Test Case NaturalKey_NoDuplicate_11mfsc.hql  Execution Start Time:  2020_05_24_123300
+Test Case NaturalKey_NoDuplicate_11mfsc.hql  Execution End Time:    2020_05_24_123412
+Test case NaturalKey_NoDuplicate_11mfsc.hql  is passed.
+
+NaturalKey_NoDuplicate_12tpcont.hql
+
+Test Case NaturalKey_NoDuplicate_12tpcont.hql  Execution Start Time:  2020_05_24_123412
+Test Case NaturalKey_NoDuplicate_12tpcont.hql  Execution End Time:    2020_05_24_123441
+Test case NaturalKey_NoDuplicate_12tpcont.hql  is passed.
+
+NaturalKey_NoDuplicate_13mfbr.hql
+
+Test Case NaturalKey_NoDuplicate_13mfbr.hql  Execution Start Time:  2020_05_24_123441
+Test Case NaturalKey_NoDuplicate_13mfbr.hql  Execution End Time:    2020_05_24_123508
+Test case NaturalKey_NoDuplicate_13mfbr.hql  is passed.
+
+NaturalKey_NoDuplicate_14mfcl.hql
+
+Test Case NaturalKey_NoDuplicate_14mfcl.hql  Execution Start Time:  2020_05_24_123508
+Test Case NaturalKey_NoDuplicate_14mfcl.hql  Execution End Time:    2020_05_24_123536
+Test case NaturalKey_NoDuplicate_14mfcl.hql  is passed.
+
+NaturalKey_NoDuplicate_15mfrrus.hql
+
+Test Case NaturalKey_NoDuplicate_15mfrrus.hql  Execution Start Time:  2020_05_24_123536
+Test Case NaturalKey_NoDuplicate_15mfrrus.hql  Execution End Time:    2020_05_24_123602
+Test case NaturalKey_NoDuplicate_15mfrrus.hql  is passed.
+
+NaturalKey_NoDuplicate_16gncode.hql
+
+Test Case NaturalKey_NoDuplicate_16gncode.hql  Execution Start Time:  2020_05_24_123602
+Test Case NaturalKey_NoDuplicate_16gncode.hql  Execution End Time:    2020_05_24_123638
+Test case NaturalKey_NoDuplicate_16gncode.hql  is passed.
+
+Automation Test Run End Time:  2020_05_24_123638
+
+###########################################
+Automation Test Run Result Summary:
+Total test cases have been executed:  16
+Total test cases have been failed  : 
+Total test cases have been passed  :  16
+###########################################

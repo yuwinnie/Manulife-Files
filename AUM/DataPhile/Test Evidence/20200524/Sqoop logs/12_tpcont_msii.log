@@ -1,0 +1,78 @@
+Warning: /usr/hdp/2.6.5.149-2/accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+20/05/24 11:16:06 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6.2.6.5.149-2
+20/05/24 11:16:08 WARN sqoop.ConnFactory: Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+20/05/24 11:16:08 INFO manager.SqlManager: Using default fetchSize of 1000
+20/05/24 11:16:08 INFO tool.CodeGenTool: Beginning code generation
+20/05/24 11:16:09 INFO manager.SqlManager: Executing SQL statement: select  a.*,'MSII' as brokder_code from  PUB.tpcont a  where proc_dt >= '2020-05-17' and  (1 = 0) 
+20/05/24 11:16:09 INFO manager.SqlManager: Executing SQL statement: select  a.*,'MSII' as brokder_code from  PUB.tpcont a  where proc_dt >= '2020-05-17' and  (1 = 0) 
+20/05/24 11:16:09 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /usr/hdp/2.6.5.149-2/hadoop-mapreduce
+Note: /tmp/sqoop-invaumsvcqa/compile/94741ecd8cf5fa3f1d93659a69113309/QueryResult.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+20/05/24 11:16:12 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-invaumsvcqa/compile/94741ecd8cf5fa3f1d93659a69113309/QueryResult.jar
+20/05/24 11:16:12 INFO mapreduce.ImportJobBase: Beginning query import.
+20/05/24 11:16:12 INFO mapreduce.DataDrivenImportJob: Enabling relaxed (read uncommitted) transaction isolation for imports
+20/05/24 11:16:13 INFO client.AHSProxy: Connecting to Application History server at azcedlmstv002.v01caedl.manulife.com/10.237.20.9:10200
+20/05/24 11:16:13 INFO hdfs.DFSClient: Created HDFS_DELEGATION_TOKEN token 3365333 for invaumsvcqa on 10.237.20.8:8020
+20/05/24 11:16:13 INFO security.TokenCache: Got dt for hdfs://azcedlmstv001.v01caedl.manulife.com:8020; Kind: HDFS_DELEGATION_TOKEN, Service: 10.237.20.8:8020, Ident: (HDFS_DELEGATION_TOKEN token 3365333 for invaumsvcqa)
+20/05/24 11:16:13 INFO security.TokenCache: Got dt for hdfs://azcedlmstv001.v01caedl.manulife.com:8020; Kind: kms-dt, Service: 10.237.20.10:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590333373190, maxDate=1590938173190, sequenceNumber=3238, masterKeyId=2)
+20/05/24 11:16:13 INFO client.RequestHedgingRMFailoverProxyProvider: Looking for the active RM in [rm2, rm1]...
+20/05/24 11:16:13 INFO client.RequestHedgingRMFailoverProxyProvider: Found active RM [rm2]
+20/05/24 11:16:13 INFO security.TokenCache: Got dt for hdfs://azcedlmstv001.v01caedl.manulife.com:8020; Kind: kms-dt, Service: 10.237.20.11:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590333373349, maxDate=1590938173349, sequenceNumber=2906, masterKeyId=2)
+20/05/24 11:16:18 INFO db.DBInputFormat: Using read uncommited transaction isolation
+20/05/24 11:16:18 INFO db.DataDrivenDBInputFormat: BoundingValsQuery: select min(proc_dt), max(proc_dt) from pub.tpcont where proc_dt in (select proc_dt from pub.tpcont where proc_dt >= '2020-05-17')
+20/05/24 11:16:18 WARN db.DateSplitter: Encountered a NULL date in the split column. Splits may be poorly balanced.
+20/05/24 11:16:18 WARN db.DateSplitter: Encountered a NULL date in the split column. Splits may be poorly balanced.
+20/05/24 11:16:18 INFO mapreduce.JobSubmitter: number of splits:1
+20/05/24 11:16:18 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1590256180930_1000
+20/05/24 11:16:18 INFO mapreduce.JobSubmitter: Kind: kms-dt, Service: 10.237.20.10:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590333373190, maxDate=1590938173190, sequenceNumber=3238, masterKeyId=2)
+20/05/24 11:16:18 INFO mapreduce.JobSubmitter: Kind: HDFS_DELEGATION_TOKEN, Service: 10.237.20.8:8020, Ident: (HDFS_DELEGATION_TOKEN token 3365333 for invaumsvcqa)
+20/05/24 11:16:18 INFO mapreduce.JobSubmitter: Kind: kms-dt, Service: 10.237.20.11:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590333373349, maxDate=1590938173349, sequenceNumber=2906, masterKeyId=2)
+20/05/24 11:16:19 INFO impl.TimelineClientImpl: Timeline service address: http://azcedlmstv002.v01caedl.manulife.com:8188/ws/v1/timeline/
+20/05/24 11:16:19 INFO impl.YarnClientImpl: Submitted application application_1590256180930_1000
+20/05/24 11:16:19 INFO mapreduce.Job: The url to track the job: http://azcedlmstv001.v01caedl.manulife.com:8088/proxy/application_1590256180930_1000/
+20/05/24 11:16:19 INFO mapreduce.Job: Running job: job_1590256180930_1000
+20/05/24 11:16:32 INFO mapreduce.Job: Job job_1590256180930_1000 running in uber mode : false
+20/05/24 11:16:32 INFO mapreduce.Job:  map 0% reduce 0%
+20/05/24 11:16:43 INFO mapreduce.Job:  map 100% reduce 0%
+20/05/24 11:16:43 INFO mapreduce.Job: Job job_1590256180930_1000 completed successfully
+20/05/24 11:16:43 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=188407
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=111
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=4
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Other local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=9497
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=9497
+		Total vcore-milliseconds taken by all map tasks=9497
+		Total megabyte-milliseconds taken by all map tasks=38899712
+	Map-Reduce Framework
+		Map input records=0
+		Map output records=0
+		Input split bytes=111
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=52
+		CPU time spent (ms)=3370
+		Physical memory (bytes) snapshot=355491840
+		Virtual memory (bytes) snapshot=5532762112
+		Total committed heap usage (bytes)=422576128
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=0
+20/05/24 11:16:43 INFO mapreduce.ImportJobBase: Transferred 0 bytes in 30.9555 seconds (0 bytes/sec)
+20/05/24 11:16:43 INFO mapreduce.ImportJobBase: Retrieved 0 records.
+20/05/24 11:16:43 INFO util.AppendUtils: Appending to directory process_date=2020-05-02
+20/05/24 11:16:43 INFO util.AppendUtils: Using found partition 20

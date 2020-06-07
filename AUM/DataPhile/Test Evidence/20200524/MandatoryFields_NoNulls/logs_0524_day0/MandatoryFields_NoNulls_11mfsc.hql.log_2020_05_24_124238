@@ -1,0 +1,114 @@
+issuing: !connect jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv '' [passwd stripped] 
+Connecting to jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv
+Connected to: Apache Hive (version 1.2.1000.2.6.5.149-2)
+Driver: Hive JDBC (version 1.2.1000.2.6.5.149-2)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> --MandatoryFields_No null values
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> select  cusip,short_name,fund_type,prc_factor,reg_code,dual_pay,bbs_elig,vse_elig,dtc_elig,md w_elig,euro_elig,name_chg,recommend,div_days,priv_days,class,num_decimals,stat,seg_pri,seg_pri_or,trades_ok,cds_elig,cns_elig,nids_elig,dcs_ ecs_elig,seg_fund,drs_elig,prc_stat,days_prc_cur
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> from    inv_aum_typed_qa.dpl_mfsc 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> where   process_date = cast(regexp_replace(${t_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$ 2-$3') as date)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> and     (cusip is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      short_name is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      fund_type is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      prc_factor is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      reg_code is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      dual_pay is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      bbs_elig is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      vse_elig is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      dtc_elig is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      mdw_elig is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      euro_elig is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      name_chg is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      recommend is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      div_days is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      priv_days is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      class is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      num_decimals is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      stat is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      seg_pri is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      seg_pri_or is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      trades_ok is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      cds_elig is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      cns_elig is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      nids_elig is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      dcs_ecs_elig is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      seg_fund is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      drs_elig is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      prc_stat is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      days_prc_cur is null)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> limit 1;
+INFO  : Tez session hasn't been created yet. Opening session
+INFO  : Dag name: select  cusip,short_name,fund_type,prc_f...1(Stage-1)
+INFO  : Status: Running (Executing on YARN cluster with App id application_1590256180930_1327)
+
+[2K--------------------------------------------------------------------------------
+[2K[36;1m        VERTICES      STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+[22;0m[2K--------------------------------------------------------------------------------
+[2KMap 1                 INITED      2          0        0        2       0       0
+[2K--------------------------------------------------------------------------------
+[2K[31;1mVERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 5.35 s     
+[22;0m[2K--------------------------------------------------------------------------------
+[7A[2K--------------------------------------------------------------------------------
+[2K[36;1m        VERTICES      STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+[22;0m[2K--------------------------------------------------------------------------------
+[2KMap 1                RUNNING      2          0        2        0       0       0
+[2K--------------------------------------------------------------------------------
+[2K[31;1mVERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 10.35 s    
+[22;0m[2K--------------------------------------------------------------------------------
+[7A[2K--------------------------------------------------------------------------------
+[2K[36;1m        VERTICES      STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+[22;0m[2K--------------------------------------------------------------------------------
+[2KMap 1 .....          RUNNING      2          1        1        0       0       0
+[2K--------------------------------------------------------------------------------
+[2K[31;1mVERTICES: 00/01  [=============>>-------------] 50%   ELAPSED TIME: 15.35 s    
+[22;0m[2K--------------------------------------------------------------------------------
+[7A[2K--------------------------------------------------------------------------------
+[2K[36;1m        VERTICES      STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+[22;0m[2K--------------------------------------------------------------------------------
+[2KMap 1 ..........   SUCCEEDED      2          2        0        0       0       0
+[2K--------------------------------------------------------------------------------
+[2K[31;1mVERTICES: 01/01  [==========================>>] 100%  ELAPSED TIME: 16.53 s    
+[22;0m[2K--------------------------------------------------------------------------------
+Getting log thread is interrupted, since query is done!
++--------+-------------+------------+-------------+-----------+-----------+-----------+-----------+-----------+-----------+------------+-----------+------------+-----------+------------+--------+---------------+-------+----------+-------------+------------+-----------+-----------+------------+---------------+-----------+-----------+-----------+---------------+--+
+| cusip  | short_name  | fund_type  | prc_factor  | reg_code  | dual_pay  | bbs_elig  | vse_elig  | dtc_elig  | mdw_elig  | euro_elig  | name_chg  | recommend  | div_days  | priv_days  | class  | num_decimals  | stat  | seg_pri  | seg_pri_or  | trades_ok  | cds_elig  | cns_elig  | nids_elig  | dcs_ecs_elig  | seg_fund  | drs_elig  | prc_stat  | days_prc_cur  |
++--------+-------------+------------+-------------+-----------+-----------+-----------+-----------+-----------+-----------+------------+-----------+------------+-----------+------------+--------+---------------+-------+----------+-------------+------------+-----------+-----------+------------+---------------+-----------+-----------+-----------+---------------+--+
++--------+-------------+------------+-------------+-----------+-----------+-----------+-----------+-----------+-----------+------------+-----------+------------+-----------+------------+--------+---------------+-------+----------+-------------+------------+-----------+-----------+------------+---------------+-----------+-----------+-----------+---------------+--+
+No rows selected (25.8 seconds)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+Closing: 0: jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv

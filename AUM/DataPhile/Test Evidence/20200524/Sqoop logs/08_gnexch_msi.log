@@ -1,0 +1,78 @@
+Warning: /usr/hdp/2.6.5.149-2/accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+20/05/24 10:43:38 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6.2.6.5.149-2
+20/05/24 10:43:40 WARN sqoop.ConnFactory: Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+20/05/24 10:43:40 INFO manager.SqlManager: Using default fetchSize of 1000
+20/05/24 10:43:40 INFO tool.CodeGenTool: Beginning code generation
+20/05/24 10:43:41 INFO manager.SqlManager: Executing SQL statement: select  a.*,'MSI' as brokder_code from  PUB.gnexch a  where last_dt >= '2020-05-17' and  (1 = 0) 
+20/05/24 10:43:41 INFO manager.SqlManager: Executing SQL statement: select  a.*,'MSI' as brokder_code from  PUB.gnexch a  where last_dt >= '2020-05-17' and  (1 = 0) 
+20/05/24 10:43:41 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /usr/hdp/2.6.5.149-2/hadoop-mapreduce
+Note: /tmp/sqoop-invaumsvcqa/compile/8a7ab1af09cda7fceb4b9c89be631fc1/QueryResult.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+20/05/24 10:43:43 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-invaumsvcqa/compile/8a7ab1af09cda7fceb4b9c89be631fc1/QueryResult.jar
+20/05/24 10:43:43 INFO mapreduce.ImportJobBase: Beginning query import.
+20/05/24 10:43:43 INFO mapreduce.DataDrivenImportJob: Enabling relaxed (read uncommitted) transaction isolation for imports
+20/05/24 10:43:43 INFO client.AHSProxy: Connecting to Application History server at azcedlmstv002.v01caedl.manulife.com/10.237.20.9:10200
+20/05/24 10:43:44 INFO hdfs.DFSClient: Created HDFS_DELEGATION_TOKEN token 3365017 for invaumsvcqa on 10.237.20.8:8020
+20/05/24 10:43:44 INFO security.TokenCache: Got dt for hdfs://azcedlmstv001.v01caedl.manulife.com:8020; Kind: HDFS_DELEGATION_TOKEN, Service: 10.237.20.8:8020, Ident: (HDFS_DELEGATION_TOKEN token 3365017 for invaumsvcqa)
+20/05/24 10:43:44 INFO security.TokenCache: Got dt for hdfs://azcedlmstv001.v01caedl.manulife.com:8020; Kind: kms-dt, Service: 10.237.20.10:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590331424085, maxDate=1590936224085, sequenceNumber=3022, masterKeyId=2)
+20/05/24 10:43:44 INFO client.RequestHedgingRMFailoverProxyProvider: Looking for the active RM in [rm2, rm1]...
+20/05/24 10:43:44 INFO client.RequestHedgingRMFailoverProxyProvider: Found active RM [rm2]
+20/05/24 10:43:44 INFO security.TokenCache: Got dt for hdfs://azcedlmstv001.v01caedl.manulife.com:8020; Kind: kms-dt, Service: 10.237.20.11:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590331424247, maxDate=1590936224247, sequenceNumber=2748, masterKeyId=2)
+20/05/24 10:43:48 INFO db.DBInputFormat: Using read uncommited transaction isolation
+20/05/24 10:43:48 INFO db.DataDrivenDBInputFormat: BoundingValsQuery: select min(last_dt), max(last_dt) from pub.gnexch where last_dt in (select last_dt from pub.gnexch where last_dt >= '2020-05-17')
+20/05/24 10:43:49 INFO db.IntegerSplitter: Split size: 34560000; Num splits: 10 from: 1589774400000 to: 1590120000000
+20/05/24 10:43:49 INFO mapreduce.JobSubmitter: number of splits:10
+20/05/24 10:43:49 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1590256180930_0942
+20/05/24 10:43:49 INFO mapreduce.JobSubmitter: Kind: kms-dt, Service: 10.237.20.10:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590331424085, maxDate=1590936224085, sequenceNumber=3022, masterKeyId=2)
+20/05/24 10:43:49 INFO mapreduce.JobSubmitter: Kind: HDFS_DELEGATION_TOKEN, Service: 10.237.20.8:8020, Ident: (HDFS_DELEGATION_TOKEN token 3365017 for invaumsvcqa)
+20/05/24 10:43:49 INFO mapreduce.JobSubmitter: Kind: kms-dt, Service: 10.237.20.11:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590331424247, maxDate=1590936224247, sequenceNumber=2748, masterKeyId=2)
+20/05/24 10:43:50 INFO impl.TimelineClientImpl: Timeline service address: http://azcedlmstv002.v01caedl.manulife.com:8188/ws/v1/timeline/
+20/05/24 10:43:50 INFO impl.YarnClientImpl: Submitted application application_1590256180930_0942
+20/05/24 10:43:50 INFO mapreduce.Job: The url to track the job: http://azcedlmstv001.v01caedl.manulife.com:8088/proxy/application_1590256180930_0942/
+20/05/24 10:43:50 INFO mapreduce.Job: Running job: job_1590256180930_0942
+20/05/24 10:44:02 INFO mapreduce.Job: Job job_1590256180930_0942 running in uber mode : false
+20/05/24 10:44:02 INFO mapreduce.Job:  map 0% reduce 0%
+20/05/24 10:44:14 INFO mapreduce.Job:  map 30% reduce 0%
+20/05/24 10:44:16 INFO mapreduce.Job:  map 70% reduce 0%
+20/05/24 10:44:17 INFO mapreduce.Job:  map 90% reduce 0%
+20/05/24 10:44:20 INFO mapreduce.Job:  map 100% reduce 0%
+20/05/24 10:44:21 INFO mapreduce.Job: Job job_1590256180930_0942 completed successfully
+20/05/24 10:44:21 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=1883910
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=6940
+		HDFS: Number of bytes written=434
+		HDFS: Number of read operations=40
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=20
+	Job Counters 
+		Launched map tasks=10
+		Other local map tasks=10
+		Total time spent by all maps in occupied slots (ms)=101532
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=101532
+		Total vcore-milliseconds taken by all map tasks=101532
+		Total megabyte-milliseconds taken by all map tasks=415875072
+	Map-Reduce Framework
+		Map input records=6
+		Map output records=6
+		Input split bytes=1261
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=610
+		CPU time spent (ms)=33970
+		Physical memory (bytes) snapshot=3967176704
+		Virtual memory (bytes) snapshot=55486382080
+		Total committed heap usage (bytes)=4753719296
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=434
+20/05/24 10:44:21 INFO mapreduce.ImportJobBase: Transferred 434 bytes in 37.5077 seconds (11.571 bytes/sec)
+20/05/24 10:44:21 INFO mapreduce.ImportJobBase: Retrieved 6 records.

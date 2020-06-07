@@ -1,0 +1,50 @@
+issuing: !connect jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv '' [passwd stripped] 
+Connecting to jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv
+Connected to: Apache Hive (version 1.2.1000.2.6.5.149-2)
+Driver: Hive JDBC (version 1.2.1000.2.6.5.149-2)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> --Natural Key _No Duplicate
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> select  class, broker_code,count(*) ct
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> from    inv_aum_typed_qa.dpl_mfclcl 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> where   process_date = cast(regexp_replace(${t_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$2-$3') as date) 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> group by class, broker_code 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> having count(*) >1
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> limit 1;
+INFO  : Tez session hasn't been created yet. Opening session
+INFO  : Dag name: select  class, broker_code,count(*) ct
+
+...1(Stage-1)
+INFO  : Status: Running (Executing on YARN cluster with App id application_1590256180930_1269)
+
+[2K--------------------------------------------------------------------------------
+[2K[36;1m        VERTICES      STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+[22;0m[2K--------------------------------------------------------------------------------
+[2KMap 1                 INITED      1          0        0        1       0       0
+Reducer 2             INITED      2          0        0        2       0       0
+[2K--------------------------------------------------------------------------------
+[2K[31;1mVERTICES: 00/02  [>>--------------------------] 0%    ELAPSED TIME: 6.80 s     
+[22;0m[2K--------------------------------------------------------------------------------
+[8A[2K--------------------------------------------------------------------------------
+[2K[36;1m        VERTICES      STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+[22;0m[2K--------------------------------------------------------------------------------
+[2KMap 1 ..........   SUCCEEDED      1          1        0        0       0       0
+Reducer 2 ......   SUCCEEDED      1          1        0        0       0       0
+[2K--------------------------------------------------------------------------------
+[2K[31;1mVERTICES: 02/02  [==========================>>] 100%  ELAPSED TIME: 10.84 s    
+[22;0m[2K--------------------------------------------------------------------------------
+Getting log thread is interrupted, since query is done!
++--------+--------------+-----+--+
+| class  | broker_code  | ct  |
++--------+--------------+-----+--+
++--------+--------------+-----+--+
+No rows selected (18.575 seconds)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+Closing: 0: jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv

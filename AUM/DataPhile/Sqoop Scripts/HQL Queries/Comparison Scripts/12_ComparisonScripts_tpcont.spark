@@ -1,0 +1,150 @@
+val r1 = spark.sql(s"""
+select
+  acct
+, fill_prc_int
+, fill_qty
+, principal
+, mkt_code
+, hold_mail
+, cusip
+, buy
+, comm_clt_ovrd
+, trailers
+, kp_tlr_lines
+, other_side
+, exch_rate
+, trd_dt
+, stl_dt
+, rr
+, trd_num
+, inv_tsfr
+, comm_cust
+, comm_no_min
+, accr_int
+, sec_fee
+, ny_tax
+, exch_amt
+, processed
+, qty
+, gross
+, net
+, fund_type
+, comm_full
+, cxl
+, other_tax
+, other_tax_type
+, comm_split
+, comm_basic
+, comm_prefig
+, fill_prc_ext
+, client_side
+, comm_rr
+, comm_cents
+, comm_thru
+, opt_trd_type
+, proc_dt
+, printed
+, cxld
+, last_dt
+, last_time
+, last_usr
+, entr_dt
+, entr_time
+, entr_usr
+, ref_num
+, cxl_proc_dt
+, cxl_trd_num
+, oi_num
+, comm_rr_net
+, bucket
+, comm_trd_ct
+, notes
+, comm_rr_fx
+, comm_rr_net_fx
+, inst_code
+, order_dt
+, order_num
+, cc75
+, cc77
+, broker_code
+from inv_aum_typed_qa.dpl_tpcont where process_date='${t_process_date}'
+""")
+
+val r2 = spark.sql(s"""
+select
+  acct
+, fill_prc_int
+, fill_qty
+, principal
+, mkt_code
+, hold_mail
+, cusip
+, buy
+, comm_clt_ovrd
+, trailers
+, kp_tlr_lines
+, other_side
+, exch_rate
+, trd_dt
+, stl_dt
+, rr
+, trd_num
+, inv_tsfr
+, comm_cust
+, comm_no_min
+, accr_int
+, sec_fee
+, ny_tax
+, exch_amt
+, processed
+, qty
+, gross
+, net
+, fund_type
+, comm_full
+, cxl
+, other_tax
+, other_tax_type
+, comm_split
+, comm_basic
+, comm_prefig
+, fill_prc_ext
+, client_side
+, comm_rr
+, comm_cents
+, comm_thru
+, opt_trd_type
+, proc_dt
+, printed
+, cxld
+, last_dt
+, last_time
+, last_usr
+, entr_dt
+, entr_time
+, entr_usr
+, ref_num
+, cxl_proc_dt
+, cxl_trd_num
+, oi_num
+, comm_rr_net
+, bucket
+, comm_trd_ct
+, notes
+, comm_rr_fx
+, comm_rr_net_fx
+, inst_code
+, order_dt
+, order_num
+, cc75
+, cc77
+, broker_code
+from inv_aum_raw_qa.test_dpl_tpcont where process_date='${s_process_date}'
+""");
+
+
+val diff = r2.except(r1)
+println("Count with mismatches = " + diff.count())
+diff.count;
+
+diff.show(10,false)

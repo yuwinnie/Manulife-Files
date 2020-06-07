@@ -1,0 +1,32 @@
+issuing: !connect jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv '' [passwd stripped] 
+Connecting to jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv
+Connected to: Apache Hive (version 1.2.1000.2.6.5.65-2)
+Driver: Hive JDBC (version 1.2.1000.2.6.5.65-2)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> --Natural Key _No null values
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> select  company
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> from    inv_aum_typed_qa.dpl_gngnco 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> where   process_date = cast(regexp_replace(${t_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$ 2-$3') as date)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> and     company is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> limit 10;
+INFO  : Tez session hasn't been created yet. Opening session
+INFO  : Dag name: select  company
+
+from    inv_aum_typed_...10(Stage-1)
+INFO  : Status: Running (Executing on YARN cluster with App id application_1588518416642_10939)
+
+Getting log thread is interrupted, since query is done!
++----------+--+
+| company  |
++----------+--+
++----------+--+
+No rows selected (9.519 seconds)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+Closing: 0: jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv

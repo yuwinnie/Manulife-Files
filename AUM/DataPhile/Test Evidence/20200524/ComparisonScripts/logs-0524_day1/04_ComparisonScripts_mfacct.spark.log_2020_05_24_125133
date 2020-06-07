@@ -1,0 +1,38 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Spark context Web UI available at http://azcedledgev001.v01caedl.manulife.com:4040
+Spark context available as 'sc' (master = local[*], app id = local-1590339103985).
+Spark session available as 'spark'.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 2.3.0.2.6.5.149-2
+      /_/
+         
+Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_241)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> val t_process_date = "2020-05-24"
+t_process_date: String = 2020-05-24
+
+scala> val s_process_date = "2020-05-02"
+s_process_date: String = 2020-05-02
+
+scala> :load '04_ComparisonScripts_mfacct.spark' 
+Loading 04_ComparisonScripts_mfacct.spark...
+r1: org.apache.spark.sql.DataFrame = [acct: string, fund_type: string ... 7 more fields]
+r2: org.apache.spark.sql.DataFrame = [acct: string, fund_type: string ... 7 more fields]
+diff: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [acct: string, fund_type: string ... 7 more fields]
+[Stage 0:>                  (0 + 2) / 2][Stage 1:>                 (0 + 6) / 30][Stage 0:>                  (0 + 2) / 2][Stage 1:>                 (0 + 7) / 30][Stage 0:>                  (0 + 2) / 2][Stage 1:===>              (6 + 6) / 30][Stage 0:>                  (0 + 2) / 2][Stage 1:=====>           (10 + 6) / 30][Stage 0:>                  (0 + 2) / 2][Stage 1:=======>         (14 + 6) / 30][Stage 0:>                  (0 + 2) / 2][Stage 1:==========>      (18 + 6) / 30][Stage 0:>                  (0 + 2) / 2][Stage 1:=============>   (23 + 6) / 30][Stage 0:>                                                          (0 + 2) / 2][Stage 2:==>                                                      (8 + 8) / 200][Stage 2:======>                                                 (23 + 8) / 200][Stage 2:===========>                                            (42 + 8) / 200][Stage 2:================>                                       (60 + 8) / 200][Stage 2:====================>                                   (74 + 8) / 200][Stage 2:==========================>                             (94 + 8) / 200][Stage 2:===============================>                      (115 + 10) / 200][Stage 2:=======================================>               (142 + 8) / 200][Stage 2:=============================================>         (167 + 9) / 200][Stage 2:====================================================>  (192 + 8) / 200][Stage 3:=======================>                                (85 + 8) / 200][Stage 3:=================================>                     (121 + 8) / 200][Stage 3:=============================================>         (167 + 8) / 200]                                                                                Count with mismatches = 0
+[Stage 5:=========>       (17 + 8) / 30][Stage 6:>                  (0 + 0) / 2][Stage 5:================>(29 + 1) / 30][Stage 6:>                  (0 + 2) / 2][Stage 6:>                                                          (0 + 2) / 2][Stage 6:=============================>                             (1 + 1) / 2][Stage 7:=====================>                                  (76 + 8) / 200][Stage 7:============================>                          (105 + 8) / 200][Stage 7:=======================================>               (142 + 8) / 200][Stage 7:================================================>      (175 + 8) / 200][Stage 8:==========================================>            (153 + 9) / 200]                                                                                res1: Long = 0
+[Stage 10:==============> (27 + 3) / 30][Stage 11:>                 (0 + 2) / 2][Stage 11:>                                                         (0 + 2) / 2][Stage 12:===========================>                          (102 + 8) / 200][Stage 12:===================================>                  (133 + 8) / 200][Stage 12:==========================================>           (156 + 8) / 200][Stage 12:==================================================>   (186 + 8) / 200]                                                                                +----+---------+-------+---------+--------+----+--------+-----+-----------+
+|acct|fund_type|last_dt|last_time|last_usr|code|suspense|descr|broker_code|
++----+---------+-------+---------+--------+----+--------+-----+-----------+
++----+---------+-------+---------+--------+----+--------+-----+-----------+
+
+
+scala> 
+
+scala> :quit

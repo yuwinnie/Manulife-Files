@@ -1,0 +1,106 @@
+Automation Test Run Start Time  2020_05_24_124048
+
+RecordCountValidation_01actran.hql
+
+Test Case RecordCountValidation_01actran.hql  Execution Start Time:  2020_05_24_124048
+Test Case RecordCountValidation_01actran.hql  Execution End Time:    2020_05_24_124140
+Test case RecordCountValidation_01actran.hql  is passed.
+
+RecordCountValidation_02gngnco.hql
+
+Test Case RecordCountValidation_02gngnco.hql  Execution Start Time:  2020_05_24_124140
+Test Case RecordCountValidation_02gngnco.hql  Execution End Time:    2020_05_24_124215
+Test case RecordCountValidation_02gngnco.hql  is passed.
+
+RecordCountValidation_03mfclac.hql
+
+Test Case RecordCountValidation_03mfclac.hql  Execution Start Time:  2020_05_24_124215
+Test Case RecordCountValidation_03mfclac.hql  Execution End Time:    2020_05_24_124300
+Test case RecordCountValidation_03mfclac.hql  is passed.
+
+RecordCountValidation_04mfacct.hql
+
+Test Case RecordCountValidation_04mfacct.hql  Execution Start Time:  2020_05_24_124300
+Test Case RecordCountValidation_04mfacct.hql  Execution End Time:    2020_05_24_124334
+Test case RecordCountValidation_04mfacct.hql  is passed.
+
+RecordCountValidation_05mfrr.hql
+
+Test Case RecordCountValidation_05mfrr.hql  Execution Start Time:  2020_05_24_124334
+Test Case RecordCountValidation_05mfrr.hql  Execution End Time:    2020_05_24_124408
+Test case RecordCountValidation_05mfrr.hql  is passed.
+
+RecordCountValidation_06esmgr.hql
+
+Test Case RecordCountValidation_06esmgr.hql  Execution Start Time:  2020_05_24_124408
+Test Case RecordCountValidation_06esmgr.hql  Execution End Time:    2020_05_24_124447
+Test case RecordCountValidation_06esmgr.hql  is passed.
+
+RecordCountValidation_07acpos.hql
+
+Test Case RecordCountValidation_07acpos.hql  Execution Start Time:  2020_05_24_124447
+Test Case RecordCountValidation_07acpos.hql  Execution End Time:    2020_05_24_124535
+Test case RecordCountValidation_07acpos.hql  is passed.
+
+RecordCountValidation_08gnexch.hql
+
+Test Case RecordCountValidation_08gnexch.hql  Execution Start Time:  2020_05_24_124535
+Test Case RecordCountValidation_08gnexch.hql  Execution End Time:    2020_05_24_124607
+Test case RecordCountValidation_08gnexch.hql  is passed.
+
+RecordCountValidation_09tpkptl.hql
+
+Test Case RecordCountValidation_09tpkptl.hql  Execution Start Time:  2020_05_24_124607
+Test Case RecordCountValidation_09tpkptl.hql  Execution End Time:    2020_05_24_124656
+Test case RecordCountValidation_09tpkptl.hql  is passed.
+
+RecordCountValidation_10mfclcl.hql
+
+Test Case RecordCountValidation_10mfclcl.hql  Execution Start Time:  2020_05_24_124656
+Test Case RecordCountValidation_10mfclcl.hql  Execution End Time:    2020_05_24_124730
+Test case RecordCountValidation_10mfclcl.hql  is passed.
+
+RecordCountValidation_11mfsc.hql
+
+Test Case RecordCountValidation_11mfsc.hql  Execution Start Time:  2020_05_24_124730
+Test Case RecordCountValidation_11mfsc.hql  Execution End Time:    2020_05_24_124807
+Test case RecordCountValidation_11mfsc.hql  is passed.
+
+RecordCountValidation_12tpcont.hql
+
+Test Case RecordCountValidation_12tpcont.hql  Execution Start Time:  2020_05_24_124807
+Test Case RecordCountValidation_12tpcont.hql  Execution End Time:    2020_05_24_124850
+Test case RecordCountValidation_12tpcont.hql  is passed.
+
+RecordCountValidation_13mfbr.hql
+
+Test Case RecordCountValidation_13mfbr.hql  Execution Start Time:  2020_05_24_124850
+Test Case RecordCountValidation_13mfbr.hql  Execution End Time:    2020_05_24_124926
+Test case RecordCountValidation_13mfbr.hql  is passed.
+
+RecordCountValidation_14mfcl.hql
+
+Test Case RecordCountValidation_14mfcl.hql  Execution Start Time:  2020_05_24_124926
+Test Case RecordCountValidation_14mfcl.hql  Execution End Time:    2020_05_24_125005
+Test case RecordCountValidation_14mfcl.hql  is passed.
+
+RecordCountValidation_15mfrrus.hql
+
+Test Case RecordCountValidation_15mfrrus.hql  Execution Start Time:  2020_05_24_125005
+Test Case RecordCountValidation_15mfrrus.hql  Execution End Time:    2020_05_24_125040
+Test case RecordCountValidation_15mfrrus.hql  is passed.
+
+RecordCountValidation_16gncode.hql
+
+Test Case RecordCountValidation_16gncode.hql  Execution Start Time:  2020_05_24_125040
+Test Case RecordCountValidation_16gncode.hql  Execution End Time:    2020_05_24_125117
+Test case RecordCountValidation_16gncode.hql  is passed.
+
+Automation Test Run End Time:  2020_05_24_125117
+
+###########################################
+Automation Test Run Result Summary:
+Total test cases have been executed:  16
+Total test cases have been failed  : 
+Total test cases have been passed  :  16
+###########################################

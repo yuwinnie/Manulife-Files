@@ -1,0 +1,106 @@
+Automation Test Run Start Time  2020_05_07_100238
+
+NaturalKeyValidation_NoNulls_01actran.hql
+
+Test Case NaturalKeyValidation_NoNulls_01actran.hql  Execution Start Time:  2020_05_07_100238
+Test Case NaturalKeyValidation_NoNulls_01actran.hql  Execution End Time:    2020_05_07_100300
+Test case NaturalKeyValidation_NoNulls_01actran.hql  is passed.
+
+NaturalKeyValidation_NoNulls_02gngnco.hql
+
+Test Case NaturalKeyValidation_NoNulls_02gngnco.hql  Execution Start Time:  2020_05_07_100300
+Test Case NaturalKeyValidation_NoNulls_02gngnco.hql  Execution End Time:    2020_05_07_100318
+Test case NaturalKeyValidation_NoNulls_02gngnco.hql  is passed.
+
+NaturalKeyValidation_NoNulls_03mfclac.hql
+
+Test Case NaturalKeyValidation_NoNulls_03mfclac.hql  Execution Start Time:  2020_05_07_100318
+Test Case NaturalKeyValidation_NoNulls_03mfclac.hql  Execution End Time:    2020_05_07_100336
+Test case NaturalKeyValidation_NoNulls_03mfclac.hql  is passed.
+
+NaturalKeyValidation_NoNulls_04mfacct.hql
+
+Test Case NaturalKeyValidation_NoNulls_04mfacct.hql  Execution Start Time:  2020_05_07_100336
+Test Case NaturalKeyValidation_NoNulls_04mfacct.hql  Execution End Time:    2020_05_07_100354
+Test case NaturalKeyValidation_NoNulls_04mfacct.hql  is passed.
+
+NaturalKeyValidation_NoNulls_05mfrr.hql
+
+Test Case NaturalKeyValidation_NoNulls_05mfrr.hql  Execution Start Time:  2020_05_07_100354
+Test Case NaturalKeyValidation_NoNulls_05mfrr.hql  Execution End Time:    2020_05_07_100414
+Test case NaturalKeyValidation_NoNulls_05mfrr.hql  is passed.
+
+NaturalKeyValidation_NoNulls_06esmgrr.hql
+
+Test Case NaturalKeyValidation_NoNulls_06esmgrr.hql  Execution Start Time:  2020_05_07_100414
+Test Case NaturalKeyValidation_NoNulls_06esmgrr.hql  Execution End Time:    2020_05_07_100436
+Test case NaturalKeyValidation_NoNulls_06esmgrr.hql  is passed.
+
+NaturalKeyValidation_NoNulls_07acpos.hql
+
+Test Case NaturalKeyValidation_NoNulls_07acpos.hql  Execution Start Time:  2020_05_07_100436
+Test Case NaturalKeyValidation_NoNulls_07acpos.hql  Execution End Time:    2020_05_07_100455
+Test case NaturalKeyValidation_NoNulls_07acpos.hql  is passed.
+
+NaturalKeyValidation_NoNulls_08gnexch.hql
+
+Test Case NaturalKeyValidation_NoNulls_08gnexch.hql  Execution Start Time:  2020_05_07_100455
+Test Case NaturalKeyValidation_NoNulls_08gnexch.hql  Execution End Time:    2020_05_07_100512
+Test case NaturalKeyValidation_NoNulls_08gnexch.hql  is passed.
+
+NaturalKeyValidation_NoNulls_09tpkptl.hql
+
+Test Case NaturalKeyValidation_NoNulls_09tpkptl.hql  Execution Start Time:  2020_05_07_100512
+Test Case NaturalKeyValidation_NoNulls_09tpkptl.hql  Execution End Time:    2020_05_07_100534
+Test case NaturalKeyValidation_NoNulls_09tpkptl.hql  is passed.
+
+NaturalKeyValidation_NoNulls_10mfclcl.hql
+
+Test Case NaturalKeyValidation_NoNulls_10mfclcl.hql  Execution Start Time:  2020_05_07_100534
+Test Case NaturalKeyValidation_NoNulls_10mfclcl.hql  Execution End Time:    2020_05_07_100553
+Test case NaturalKeyValidation_NoNulls_10mfclcl.hql  is passed.
+
+NaturalKeyValidation_NoNulls_11mfsc.hql
+
+Test Case NaturalKeyValidation_NoNulls_11mfsc.hql  Execution Start Time:  2020_05_07_100553
+Test Case NaturalKeyValidation_NoNulls_11mfsc.hql  Execution End Time:    2020_05_07_100619
+Test case NaturalKeyValidation_NoNulls_11mfsc.hql  is failed.
+
+NaturalKeyValidation_NoNulls_12tpcont.hql
+
+Test Case NaturalKeyValidation_NoNulls_12tpcont.hql  Execution Start Time:  2020_05_07_100619
+Test Case NaturalKeyValidation_NoNulls_12tpcont.hql  Execution End Time:    2020_05_07_100637
+Test case NaturalKeyValidation_NoNulls_12tpcont.hql  is passed.
+
+NaturalKeyValidation_NoNulls_13mfbr.hql
+
+Test Case NaturalKeyValidation_NoNulls_13mfbr.hql  Execution Start Time:  2020_05_07_100637
+Test Case NaturalKeyValidation_NoNulls_13mfbr.hql  Execution End Time:    2020_05_07_100659
+Test case NaturalKeyValidation_NoNulls_13mfbr.hql  is passed.
+
+NaturalKeyValidation_NoNulls_14mfcl.hql
+
+Test Case NaturalKeyValidation_NoNulls_14mfcl.hql  Execution Start Time:  2020_05_07_100659
+Test Case NaturalKeyValidation_NoNulls_14mfcl.hql  Execution End Time:    2020_05_07_100718
+Test case NaturalKeyValidation_NoNulls_14mfcl.hql  is passed.
+
+NaturalKeyValidation_NoNulls_15mfrrus.hql
+
+Test Case NaturalKeyValidation_NoNulls_15mfrrus.hql  Execution Start Time:  2020_05_07_100718
+Test Case NaturalKeyValidation_NoNulls_15mfrrus.hql  Execution End Time:    2020_05_07_100736
+Test case NaturalKeyValidation_NoNulls_15mfrrus.hql  is passed.
+
+NaturalKeyValidation_NoNulls_16gncode.hql
+
+Test Case NaturalKeyValidation_NoNulls_16gncode.hql  Execution Start Time:  2020_05_07_100736
+Test Case NaturalKeyValidation_NoNulls_16gncode.hql  Execution End Time:    2020_05_07_100759
+Test case NaturalKeyValidation_NoNulls_16gncode.hql  is passed.
+
+Automation Test Run End Time:  2020_05_07_100759
+
+###########################################
+Automation Test Run Result Summary:
+Total test cases have been executed:  16
+Total test cases have been failed  :  1
+Total test cases have been passed  :  15
+###########################################

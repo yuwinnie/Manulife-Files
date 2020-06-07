@@ -1,0 +1,106 @@
+Automation Test Run Start Time  2020_05_24_122548
+
+ExtraColumnsValidation_01actran.hql
+
+Test Case ExtraColumnsValidation_01actran.hql  Execution Start Time:  2020_05_24_122548
+Test Case ExtraColumnsValidation_01actran.hql  Execution End Time:    2020_05_24_122616
+Test case ExtraColumnsValidation_01actran.hql  is passed.
+
+ExtraColumnsValidation_02gngnco.hql
+
+Test Case ExtraColumnsValidation_02gngnco.hql  Execution Start Time:  2020_05_24_122616
+Test Case ExtraColumnsValidation_02gngnco.hql  Execution End Time:    2020_05_24_122640
+Test case ExtraColumnsValidation_02gngnco.hql  is passed.
+
+ExtraColumnsValidation_03mfclac.hql
+
+Test Case ExtraColumnsValidation_03mfclac.hql  Execution Start Time:  2020_05_24_122640
+Test Case ExtraColumnsValidation_03mfclac.hql  Execution End Time:    2020_05_24_122716
+Test case ExtraColumnsValidation_03mfclac.hql  is passed.
+
+ExtraColumnsValidation_04mfacct.hql
+
+Test Case ExtraColumnsValidation_04mfacct.hql  Execution Start Time:  2020_05_24_122716
+Test Case ExtraColumnsValidation_04mfacct.hql  Execution End Time:    2020_05_24_122741
+Test case ExtraColumnsValidation_04mfacct.hql  is passed.
+
+ExtraColumnsValidation_05mfclcl.hql
+
+Test Case ExtraColumnsValidation_05mfclcl.hql  Execution Start Time:  2020_05_24_122741
+Test Case ExtraColumnsValidation_05mfclcl.hql  Execution End Time:    2020_05_24_122806
+Test case ExtraColumnsValidation_05mfclcl.hql  is passed.
+
+ExtraColumnsValidation_06tpkptl.hql
+
+Test Case ExtraColumnsValidation_06tpkptl.hql  Execution Start Time:  2020_05_24_122806
+Test Case ExtraColumnsValidation_06tpkptl.hql  Execution End Time:    2020_05_24_122832
+Test case ExtraColumnsValidation_06tpkptl.hql  is passed.
+
+ExtraColumnsValidation_07gnexch.hql
+
+Test Case ExtraColumnsValidation_07gnexch.hql  Execution Start Time:  2020_05_24_122832
+Test Case ExtraColumnsValidation_07gnexch.hql  Execution End Time:    2020_05_24_122859
+Test case ExtraColumnsValidation_07gnexch.hql  is passed.
+
+ExtraColumnsValidation_08acpos.hql
+
+Test Case ExtraColumnsValidation_08acpos.hql  Execution Start Time:  2020_05_24_122859
+Test Case ExtraColumnsValidation_08acpos.hql  Execution End Time:    2020_05_24_122930
+Test case ExtraColumnsValidation_08acpos.hql  is passed.
+
+ExtraColumnsValidation_09esmgr.hql
+
+Test Case ExtraColumnsValidation_09esmgr.hql  Execution Start Time:  2020_05_24_122930
+Test Case ExtraColumnsValidation_09esmgr.hql  Execution End Time:    2020_05_24_122957
+Test case ExtraColumnsValidation_09esmgr.hql  is passed.
+
+ExtraColumnsValidation_10mfrr.hql
+
+Test Case ExtraColumnsValidation_10mfrr.hql  Execution Start Time:  2020_05_24_122957
+Test Case ExtraColumnsValidation_10mfrr.hql  Execution End Time:    2020_05_24_123030
+Test case ExtraColumnsValidation_10mfrr.hql  is passed.
+
+ExtraColumnsValidation_11mfsc.hql
+
+Test Case ExtraColumnsValidation_11mfsc.hql  Execution Start Time:  2020_05_24_123030
+Test Case ExtraColumnsValidation_11mfsc.hql  Execution End Time:    2020_05_24_123057
+Test case ExtraColumnsValidation_11mfsc.hql  is passed.
+
+ExtraColumnsValidation_12tpcont.hql
+
+Test Case ExtraColumnsValidation_12tpcont.hql  Execution Start Time:  2020_05_24_123057
+Test Case ExtraColumnsValidation_12tpcont.hql  Execution End Time:    2020_05_24_123124
+Test case ExtraColumnsValidation_12tpcont.hql  is passed.
+
+ExtraColumnsValidation_13mfbr.hql
+
+Test Case ExtraColumnsValidation_13mfbr.hql  Execution Start Time:  2020_05_24_123124
+Test Case ExtraColumnsValidation_13mfbr.hql  Execution End Time:    2020_05_24_123152
+Test case ExtraColumnsValidation_13mfbr.hql  is passed.
+
+ExtraColumnsValidation_14mfcl.hql
+
+Test Case ExtraColumnsValidation_14mfcl.hql  Execution Start Time:  2020_05_24_123152
+Test Case ExtraColumnsValidation_14mfcl.hql  Execution End Time:    2020_05_24_123220
+Test case ExtraColumnsValidation_14mfcl.hql  is passed.
+
+ExtraColumnsValidation_15mfrrus.hql
+
+Test Case ExtraColumnsValidation_15mfrrus.hql  Execution Start Time:  2020_05_24_123220
+Test Case ExtraColumnsValidation_15mfrrus.hql  Execution End Time:    2020_05_24_123258
+Test case ExtraColumnsValidation_15mfrrus.hql  is passed.
+
+ExtraColumnsValidation_16gncode.hql
+
+Test Case ExtraColumnsValidation_16gncode.hql  Execution Start Time:  2020_05_24_123258
+Test Case ExtraColumnsValidation_16gncode.hql  Execution End Time:    2020_05_24_123344
+Test case ExtraColumnsValidation_16gncode.hql  is passed.
+
+Automation Test Run End Time:  2020_05_24_123344
+
+###########################################
+Automation Test Run Result Summary:
+Total test cases have been executed:  16
+Total test cases have been failed  : 
+Total test cases have been passed  :  16
+###########################################

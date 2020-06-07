@@ -1,0 +1,48 @@
+issuing: !connect jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv '' [passwd stripped] 
+Connecting to jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv
+Connected to: Apache Hive (version 1.2.1000.2.6.5.149-2)
+Driver: Hive JDBC (version 1.2.1000.2.6.5.149-2)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> --MandatoryFields_No null values
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> select  rr,branch,trades_ok,short_name,language,trd_name,website,authorized_list_code,under_s upervision,rr_type
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> from    inv_aum_typed_qa.dpl_mfrr 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> where   process_date = cast(regexp_replace(${t_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$ 2-$3') as date)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> and     (rr is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      branch is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      trades_ok is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      short_name is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      language is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      trd_name is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      website is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      authorized_list_code is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      under_supervision is null
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> or      rr_type is null)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> limit 1;
+INFO  : Tez session hasn't been created yet. Opening session
+INFO  : Dag name: select  rr,branch,trades_ok,short_name,l...1(Stage-1)
+INFO  : Status: Running (Executing on YARN cluster with App id application_1590256180930_1214)
+
+Getting log thread is interrupted, since query is done!
++-----+---------+------------+-------------+-----------+-----------+----------+-----------------------+--------------------+----------+--+
+| rr  | branch  | trades_ok  | short_name  | language  | trd_name  | website  | authorized_list_code  | under_supervision  | rr_type  |
++-----+---------+------------+-------------+-----------+-----------+----------+-----------------------+--------------------+----------+--+
++-----+---------+------------+-------------+-----------+-----------+----------+-----------------------+--------------------+----------+--+
+No rows selected (9.558 seconds)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+Closing: 0: jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv

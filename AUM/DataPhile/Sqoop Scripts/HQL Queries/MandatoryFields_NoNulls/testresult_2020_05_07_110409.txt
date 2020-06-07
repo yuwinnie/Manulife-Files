@@ -1,0 +1,107 @@
+Automation Test Run Start Time  2020_05_07_110409
+
+MandatoryFields_NoNulls_01actran.hql
+
+Test Case MandatoryFields_NoNulls_01actran.hql  Execution Start Time:  2020_05_07_110409
+Test Case MandatoryFields_NoNulls_01actran.hql  Execution End Time:    2020_05_07_110427
+Test case MandatoryFields_NoNulls_01actran.hql  is passed.
+
+MandatoryFields_NoNulls_02gngnco.hql
+
+Test Case MandatoryFields_NoNulls_02gngnco.hql  Execution Start Time:  2020_05_07_110427
+Test Case MandatoryFields_NoNulls_02gngnco.hql  Execution End Time:    2020_05_07_110445
+Test case MandatoryFields_NoNulls_02gngnco.hql  is passed.
+
+MandatoryFields_NoNulls_03mfclac.hql
+
+Test Case MandatoryFields_NoNulls_03mfclac.hql  Execution Start Time:  2020_05_07_110445
+Test Case MandatoryFields_NoNulls_03mfclac.hql  Execution End Time:    2020_05_07_110514
+Test case MandatoryFields_NoNulls_03mfclac.hql  is failed.
+
+MandatoryFields_NoNulls_04mfacct.hql
+
+Test Case MandatoryFields_NoNulls_04mfacct.hql  Execution Start Time:  2020_05_07_110514
+Test Case MandatoryFields_NoNulls_04mfacct.hql  Execution End Time:    2020_05_07_110535
+Test case MandatoryFields_NoNulls_04mfacct.hql  is passed.
+
+MandatoryFields_NoNulls_05mfrr.hql
+
+Test Case MandatoryFields_NoNulls_05mfrr.hql  Execution Start Time:  2020_05_07_110535
+Test Case MandatoryFields_NoNulls_05mfrr.hql  Execution End Time:    2020_05_07_110553
+Test case MandatoryFields_NoNulls_05mfrr.hql  is passed.
+
+MandatoryFields_NoNulls_06esmgr.hql
+
+Test Case MandatoryFields_NoNulls_06esmgr.hql  Execution Start Time:  2020_05_07_110553
+Test Case MandatoryFields_NoNulls_06esmgr.hql  Execution End Time:    2020_05_07_110611
+Test case MandatoryFields_NoNulls_06esmgr.hql  is passed.
+
+MandatoryFields_NoNulls_07acpos.hql
+
+Test Case MandatoryFields_NoNulls_07acpos.hql  Execution Start Time:  2020_05_07_110611
+Test Case MandatoryFields_NoNulls_07acpos.hql  Execution End Time:    2020_05_07_110620
+Test case MandatoryFields_NoNulls_07acpos.hql  is failed.
+Have grammar error, please check your hql! 
+
+MandatoryFields_NoNulls_08gnexch.hql
+
+Test Case MandatoryFields_NoNulls_08gnexch.hql  Execution Start Time:  2020_05_07_110620
+Test Case MandatoryFields_NoNulls_08gnexch.hql  Execution End Time:    2020_05_07_110642
+Test case MandatoryFields_NoNulls_08gnexch.hql  is passed.
+
+MandatoryFields_NoNulls_09tpkptl.hql
+
+Test Case MandatoryFields_NoNulls_09tpkptl.hql  Execution Start Time:  2020_05_07_110642
+Test Case MandatoryFields_NoNulls_09tpkptl.hql  Execution End Time:    2020_05_07_110700
+Test case MandatoryFields_NoNulls_09tpkptl.hql  is passed.
+
+MandatoryFields_NoNulls_10mfclcl.hql
+
+Test Case MandatoryFields_NoNulls_10mfclcl.hql  Execution Start Time:  2020_05_07_110700
+Test Case MandatoryFields_NoNulls_10mfclcl.hql  Execution End Time:    2020_05_07_110722
+Test case MandatoryFields_NoNulls_10mfclcl.hql  is passed.
+
+MandatoryFields_NoNulls_11mfsc.hql
+
+Test Case MandatoryFields_NoNulls_11mfsc.hql  Execution Start Time:  2020_05_07_110722
+Test Case MandatoryFields_NoNulls_11mfsc.hql  Execution End Time:    2020_05_07_110751
+Test case MandatoryFields_NoNulls_11mfsc.hql  is failed.
+
+MandatoryFields_NoNulls_12tpcont.hql
+
+Test Case MandatoryFields_NoNulls_12tpcont.hql  Execution Start Time:  2020_05_07_110751
+Test Case MandatoryFields_NoNulls_12tpcont.hql  Execution End Time:    2020_05_07_110809
+Test case MandatoryFields_NoNulls_12tpcont.hql  is passed.
+
+MandatoryFields_NoNulls_13mfbr.hql
+
+Test Case MandatoryFields_NoNulls_13mfbr.hql  Execution Start Time:  2020_05_07_110809
+Test Case MandatoryFields_NoNulls_13mfbr.hql  Execution End Time:    2020_05_07_110827
+Test case MandatoryFields_NoNulls_13mfbr.hql  is passed.
+
+MandatoryFields_NoNulls_14mfbr.hql
+
+Test Case MandatoryFields_NoNulls_14mfbr.hql  Execution Start Time:  2020_05_07_110827
+Test Case MandatoryFields_NoNulls_14mfbr.hql  Execution End Time:    2020_05_07_110845
+Test case MandatoryFields_NoNulls_14mfbr.hql  is passed.
+
+MandatoryFields_NoNulls_15gncode.hql
+
+Test Case MandatoryFields_NoNulls_15gncode.hql  Execution Start Time:  2020_05_07_110845
+Test Case MandatoryFields_NoNulls_15gncode.hql  Execution End Time:    2020_05_07_110912
+Test case MandatoryFields_NoNulls_15gncode.hql  is failed.
+
+MandatoryFields_NoNulls_15mfrrus.hql
+
+Test Case MandatoryFields_NoNulls_15mfrrus.hql  Execution Start Time:  2020_05_07_110912
+Test Case MandatoryFields_NoNulls_15mfrrus.hql  Execution End Time:    2020_05_07_111037
+Test case MandatoryFields_NoNulls_15mfrrus.hql  is passed.
+
+Automation Test Run End Time:  2020_05_07_111037
+
+###########################################
+Automation Test Run Result Summary:
+Total test cases have been executed:  16
+Total test cases have been failed  :  4
+Total test cases have been passed  :  12
+###########################################

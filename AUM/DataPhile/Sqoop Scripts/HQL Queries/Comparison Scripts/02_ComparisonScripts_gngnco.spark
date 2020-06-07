@@ -1,0 +1,74 @@
+val r1 = spark.sql(s"""
+select
+  addr
+, city
+, pc
+, ph
+, prov
+, name
+, company
+, last_usr
+, last_dt
+, last_time
+, fscl_yrnd
+, rtnd_earn
+, fst_bal
+, lst_bal
+, fst_pl
+, lst_pl
+, crnt_fscl
+, short_name
+, gst_ref
+, db_name
+, cr_rpts_cur
+, post_delay
+, primary_mkt
+, consoldt
+, stmt_on
+, fund_type
+, language
+, addr2
+, broker_code
+from inv_aum_typed_qa.dpl_gngnco where process_date='${t_process_date}'
+""")
+
+val r2 = spark.sql(s"""
+select
+  addr
+, city
+, pc
+, ph
+, prov
+, name
+, company
+, last_usr
+, last_dt
+, last_time
+, fscl_yrnd
+, rtnd_earn
+, fst_bal
+, lst_bal
+, fst_pl
+, lst_pl
+, crnt_fscl
+, short_name
+, gst_ref
+, db_name
+, cr_rpts_cur
+, post_delay
+, primary_mkt
+, consoldt
+, stmt_on
+, fund_type
+, language
+, addr2
+, broker_code
+from inv_aum_raw_qa.test_dpl_gngnco where process_date='${s_process_date}'
+""");
+
+
+val diff = r2.except(r1)
+println("Count with mismatches = " + diff.count())
+diff.count;
+
+diff.show(10,false)

@@ -1,0 +1,112 @@
+val r1 = spark.sql(s"""
+select
+  client
+, rr
+, residence
+, nrt
+, stat
+, np41
+, branch
+, last_dt
+, open_dt
+, last_time
+, last_usr
+, close_dt
+, osc_exempt
+, consoldt
+, employee
+, deceased_dt
+, np41b
+, np41c
+, recip_type
+, client_id
+, house_id
+, citizen_iso
+, psd1
+, psd2
+, presumed_us
+, bank_crlimit
+, ni54a
+, ni54b
+, ni54c
+, ni54d
+, ni54e
+, corp_id
+, corp_type
+, monitor
+, client_sub_type
+, neq_id
+, etax
+, tax_hold
+, dormant
+, giin
+, irs_cost_method
+, consent_to_share
+, alternate_id
+, classification
+, broker_code
+from inv_aum_typed_qa.dpl_mfcl where process_date='2020-05-06' and broker_code = 'MSISI'
+""")
+
+val r2 = spark.sql(s"""
+select
+  client
+, rr
+, residence
+, nrt
+, stat
+, np41
+, branch
+, last_dt
+, open_dt
+, last_time
+, last_usr
+, close_dt
+, osc_exempt
+, consoldt
+, employee
+, deceased_dt
+, np41b
+, np41c
+, recip_type
+, client_id
+, house_id
+, citizen_iso
+, psd1
+, psd2
+, presumed_us
+, bank_crlimit
+, ni54a
+, ni54b
+, ni54c
+, ni54d
+, ni54e
+, corp_id
+, corp_type
+, monitor
+, client_sub_type
+, neq_id
+, etax
+, tax_hold
+, dormant
+, giin
+, irs_cost_method
+, consent_to_share
+, alternate_id
+, classification
+, broker_code
+from inv_aum_raw_qa.test_dpl_mfcl where process_date='2020-03-01' and broker_code = 'MSISI'
+""");
+
+
+val diff = r2.except(r1)
+println("Count with mismatches = " + diff.count())
+diff.count;
+
+diff.show(10,false)
+
++------+---+---------+---+----+----+------+-------+-------+---------+--------+--------+----------+--------+--------+-----------+-----+-----+----------+---------+--------+-----------+----+----+-----------+------------+-----+-----+-----+-----+-----+-------+---------+-------+---------------+------+----+--------+-------+----+---------------+----------------+------------+--------------+-----------+
+|client|rr |residence|nrt|stat|np41|branch|last_dt|open_dt|last_time|last_usr|close_dt|osc_exempt|consoldt|employee|deceased_dt|np41b|np41c|recip_type|client_id|house_id|citizen_iso|psd1|psd2|presumed_us|bank_crlimit|ni54a|ni54b|ni54c|ni54d|ni54e|corp_id|corp_type|monitor|client_sub_type|neq_id|etax|tax_hold|dormant|giin|irs_cost_method|consent_to_share|alternate_id|classification|broker_code|
++------+---+---------+---+----+----+------+-------+-------+---------+--------+--------+----------+--------+--------+-----------+-----+-----+----------+---------+--------+-----------+----+----+-----------+------------+-----+-----+-----+-----+-----+-------+---------+-------+---------------+------+----+--------+-------+----+---------------+----------------+------------+--------------+-----------+
++------+---+---------+---+----+----+------+-------+-------+---------+--------+--------+----------+--------+--------+-----------+-----+-----+----------+---------+--------+-----------+----+----+-----------+------------+-----+-----+-----+-----+-----+-------+---------+-------+---------------+------+----+--------+-------+----+---------------+----------------+------------+--------------+-----------+
+

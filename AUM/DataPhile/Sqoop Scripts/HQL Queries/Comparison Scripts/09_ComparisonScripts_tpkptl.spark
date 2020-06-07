@@ -1,0 +1,34 @@
+val r1 = spark.sql(s"""
+select
+  proc_dt
+, trd_num
+, last_dt
+, tlr_num
+, tlr_text
+, client_side
+, last_time
+, last_usr
+, broker_code
+from inv_aum_typed_qa.dpl_tpkptl where process_date='${t_process_date}'
+""")
+
+val r2 = spark.sql(s"""
+select
+  proc_dt
+, trd_num
+, last_dt
+, tlr_num
+, tlr_text
+, client_side
+, last_time
+, last_usr
+, broker_code
+from inv_aum_raw_qa.test_dpl_tpkptl where process_date='${s_process_date}'
+""");
+
+
+val diff = r2.except(r1)
+println("Count with mismatches = " + diff.count())
+diff.count;
+
+diff.show(10,false)

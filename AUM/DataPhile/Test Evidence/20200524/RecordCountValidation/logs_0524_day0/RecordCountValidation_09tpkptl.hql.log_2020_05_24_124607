@@ -1,0 +1,165 @@
+issuing: !connect jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv '' [passwd stripped] 
+Connecting to jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv
+Connected to: Apache Hive (version 1.2.1000.2.6.5.149-2)
+Driver: Hive JDBC (version 1.2.1000.2.6.5.149-2)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> --Record Count Validation
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> select  '09.dpl_tpkptl' as tableName,   
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli>         ti.ct as typed_msi_ct,      ri.ct as test_msi_ct,       case when ti.ct <> ri.ct    t hen 'FAIL' else 'PASS' end as msi_result,
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli>         tsi.ct as typed_msisi_ct,   rsi.ct as test_msisi_ct,    case when tsi.ct <> rsi.ct  t hen 'FAIL' else 'PASS' end as msisi_result,
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli>         tii.ct as typed_msii_ct,    rii.ct as test_msii_ct,     case when tii.ct <> rii.ct  t hen 'FAIL' else 'PASS' end as msii_result,
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli>         t.ct as typed_ct,           r.ct as test_ct,            case when t.ct <> r.ct      t hen 'FAIL' else 'PASS' end as result
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> from    (select count(*) as ct from inv_aum_typed_qa.dpl_tpkptl     where broker_code = 'MSI'    and process_date = cast(regexp_replace(${t_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$2-$3') as date)) as ti,
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli>         (select count(*) as ct from inv_aum_typed_qa.dpl_tpkptl     where broker_code = 'MSIS I' and process_date = cast(regexp_replace(${t_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$2-$3') as date)) as tsi,
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli>         (select count(*) as ct from inv_aum_typed_qa.dpl_tpkptl     where broker_code = 'MSII ' and process_date = cast(regexp_replace(${t_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$2-$3') as date)) as tii,
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli>         (select count(*) as ct from inv_aum_typed_qa.dpl_tpkptl     where process_date = cast (regexp_replace(${t_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$2-$3') as date)) as t,
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli>         (select count(*) as ct from inv_aum_raw_qa.test_dpl_tpkptl  where broker_code = 'MSI'    and process_date = cast(regexp_replace(${s_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$2-$3') as date)) as ri,
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli>         (select count(*) as ct from inv_aum_raw_qa.test_dpl_tpkptl  where broker_code = 'MSIS I' and process_date = cast(regexp_replace(${s_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$2-$3') as date)) as rsi,
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli>         (select count(*) as ct from inv_aum_raw_qa.test_dpl_tpkptl  where broker_code = 'MSII ' and process_date = cast(regexp_replace(${s_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$2-$3') as date)) as rii,
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli>         (select count(*) as ct from inv_aum_raw_qa.test_dpl_tpkptl  where process_date = cast (regexp_replace(${s_process_date},'(\\d{4})(\\d{2})(\\d{2})','$1-$2-$3') as date)) as r;
+INFO  : Warning: Map Join MAPJOIN[21999][bigTable=?] in task 'Reducer 2' is a cross product
+INFO  : Warning: Map Join MAPJOIN[21998][bigTable=?] in task 'Reducer 2' is a cross product
+INFO  : Warning: Map Join MAPJOIN[21997][bigTable=?] in task 'Reducer 2' is a cross product
+INFO  : Warning: Map Join MAPJOIN[21996][bigTable=?] in task 'Reducer 2' is a cross product
+INFO  : Warning: Map Join MAPJOIN[21995][bigTable=?] in task 'Reducer 2' is a cross product
+INFO  : Warning: Map Join MAPJOIN[21994][bigTable=?] in task 'Reducer 2' is a cross product
+INFO  : Warning: Map Join MAPJOIN[21993][bigTable=?] in task 'Reducer 2' is a cross product
+INFO  : Tez session hasn't been created yet. Opening session
+INFO  : Dag name: select  '09.dpl_tpkptl' as tableName,
+
+ ...r(Stage-1)
+INFO  : Setting tez.task.scale.memory.reserve-fraction to 0.30000001192092896
+INFO  : Status: Running (Executing on YARN cluster with App id application_1590256180930_1363)
+
+[2K--------------------------------------------------------------------------------
+[2K[36;1m        VERTICES      STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+[22;0m[2K--------------------------------------------------------------------------------
+[2KMap 1                RUNNING     23          0       19        4       0       0
+Map 11               RUNNING      4          0        4        0       0       0
+Map 13             SUCCEEDED      0          0        0        0       0       0
+Map 15               RUNNING      9          0        7        2       0       0
+Map 3                RUNNING     36          2       14       20       0       0
+Map 5                RUNNING     36          0       15       21       0       0
+Map 7                RUNNING     36          0       19       17       0       0
+Map 9                RUNNING     36          1       16       19       0       0
+Reducer 10            INITED      1          0        0        1       0       0
+Reducer 12            INITED      1          0        0        1       0       0
+Reducer 14 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 16            INITED      1          0        0        1       0       0
+Reducer 2             INITED      1          0        0        1       0       0
+Reducer 4             INITED      1          0        0        1       0       0
+Reducer 6             INITED      1          0        0        1       0       0
+Reducer 8             INITED      1          0        0        1       0       0
+[2K--------------------------------------------------------------------------------
+[2K[31;1mVERTICES: 01/16  [>>--------------------------] 2%    ELAPSED TIME: 8.52 s     
+[22;0m[2K--------------------------------------------------------------------------------
+[22A[2K--------------------------------------------------------------------------------
+[2K[36;1m        VERTICES      STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+[22;0m[2K--------------------------------------------------------------------------------
+[2KMap 1 ........       RUNNING     23         19        4        0       0       0
+Map 11 .........   SUCCEEDED      4          4        0        0       0       0
+Map 13             SUCCEEDED      0          0        0        0       0       0
+Map 15 .......       RUNNING      9          7        2        0       0       0
+Map 3 ....           RUNNING     36         16       19        1       0       0
+Map 5 ...            RUNNING     36         14       22        0       0       0
+Map 7 ....           RUNNING     36         16       20        0       0       0
+Map 9 ....           RUNNING     36         15       21        0       0       0
+Reducer 10           RUNNING      1          0        1        0       0       0
+Reducer 12 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 14 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 16           RUNNING      1          0        1        0       0       0
+Reducer 2            RUNNING      1          0        1        0       0       0
+Reducer 4            RUNNING      1          0        1        0       0       0
+Reducer 6            RUNNING      1          0        1        0       0       0
+Reducer 8            RUNNING      1          0        1        0       0       0
+[2K--------------------------------------------------------------------------------
+[2K[31;1mVERTICES: 03/16  [============>>--------------] 49%   ELAPSED TIME: 13.52 s    
+[22;0m[2K--------------------------------------------------------------------------------
+[22A[2K--------------------------------------------------------------------------------
+[2K[36;1m        VERTICES      STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+[22;0m[2K--------------------------------------------------------------------------------
+[2KMap 1 ........       RUNNING     23         19        4        0       0       0
+Map 11 .........   SUCCEEDED      4          4        0        0       0       0
+Map 13             SUCCEEDED      0          0        0        0       0       0
+Map 15 .........   SUCCEEDED      9          9        0        0       0       0
+Map 3 .....          RUNNING     36         20       16        0       0       0
+Map 5 .......        RUNNING     36         26       10        0       0       0
+Map 7 .......        RUNNING     36         26       10        0       0       0
+Map 9 ......         RUNNING     36         22       14        0       0       0
+Reducer 10           RUNNING      1          0        1        0       0       0
+Reducer 12 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 14 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 16 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 2            RUNNING      1          0        1        0       0       0
+Reducer 4            RUNNING      1          0        1        0       0       0
+Reducer 6            RUNNING      1          0        1        0       0       0
+Reducer 8            RUNNING      1          0        1        0       0       0
+[2K--------------------------------------------------------------------------------
+[2K[31;1mVERTICES: 05/16  [=================>>---------] 68%   ELAPSED TIME: 18.53 s    
+[22;0m[2K--------------------------------------------------------------------------------
+[22A[2K--------------------------------------------------------------------------------
+[2K[36;1m        VERTICES      STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+[22;0m[2K--------------------------------------------------------------------------------
+[2KMap 1 .........      RUNNING     23         22        1        0       0       0
+Map 11 .........   SUCCEEDED      4          4        0        0       0       0
+Map 13             SUCCEEDED      0          0        0        0       0       0
+Map 15 .........   SUCCEEDED      9          9        0        0       0       0
+Map 3 .......        RUNNING     36         28        8        0       0       0
+Map 5 .......        RUNNING     36         28        8        0       0       0
+Map 7 .......        RUNNING     36         28        8        0       0       0
+Map 9 .......        RUNNING     36         28        8        0       0       0
+Reducer 10           RUNNING      1          0        1        0       0       0
+Reducer 12 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 14 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 16 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 2            RUNNING      1          0        1        0       0       0
+Reducer 4            RUNNING      1          0        1        0       0       0
+Reducer 6            RUNNING      1          0        1        0       0       0
+Reducer 8            RUNNING      1          0        1        0       0       0
+[2K--------------------------------------------------------------------------------
+[2K[31;1mVERTICES: 05/16  [====================>>------] 79%   ELAPSED TIME: 23.55 s    
+[22;0m[2K--------------------------------------------------------------------------------
+[22A[2K--------------------------------------------------------------------------------
+[2K[36;1m        VERTICES      STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+[22;0m[2K--------------------------------------------------------------------------------
+[2KMap 1 ..........   SUCCEEDED     23         23        0        0       0       0
+Map 11 .........   SUCCEEDED      4          4        0        0       0       0
+Map 13             SUCCEEDED      0          0        0        0       0       0
+Map 15 .........   SUCCEEDED      9          9        0        0       0       0
+Map 3 ..........   SUCCEEDED     36         36        0        0       0       0
+Map 5 ..........   SUCCEEDED     36         36        0        0       0       0
+Map 7 ..........   SUCCEEDED     36         36        0        0       0       0
+Map 9 ..........   SUCCEEDED     36         36        0        0       0       0
+Reducer 10 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 12 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 14 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 16 .....   SUCCEEDED      1          1        0        0       0       0
+Reducer 2 ......   SUCCEEDED      1          1        0        0       0       0
+Reducer 4 ......   SUCCEEDED      1          1        0        0       0       0
+Reducer 6 ......   SUCCEEDED      1          1        0        0       0       0
+Reducer 8 ......   SUCCEEDED      1          1        0        0       0       0
+[2K--------------------------------------------------------------------------------
+[2K[31;1mVERTICES: 15/16  [==========================>>] 100%  ELAPSED TIME: 26.90 s    
+[22;0m[2K--------------------------------------------------------------------------------
+Getting log thread is interrupted, since query is done!
++----------------+---------------+--------------+-------------+-----------------+----------------+---------------+----------------+---------------+--------------+-----------+----------+---------+--+
+|   tablename    | typed_msi_ct  | test_msi_ct  | msi_result  | typed_msisi_ct  | test_msisi_ct  | msisi_result  | typed_msii_ct  | test_msii_ct  | msii_result  | typed_ct  | test_ct  | result  |
++----------------+---------------+--------------+-------------+-----------------+----------------+---------------+----------------+---------------+--------------+-----------+----------+---------+--+
+| 09.dpl_tpkptl  | 4798264       | 4798264      | PASS        | 1595338         | 1595338        | PASS          | 0              | 0             | PASS         | 6393602   | 6393602  | PASS    |
++----------------+---------------+--------------+-------------+-----------------+----------------+---------------+----------------+---------------+--------------+-----------+----------+---------+--+
+1 row selected (38.495 seconds)
+0: jdbc:hive2://azcedlmstv001.v01caedl.manuli> 
+Closing: 0: jdbc:hive2://azcedlmstv001.v01caedl.manulife.com:2181,azcedlmstv002.v01caedl.manulife.com:2181,azcedlmstv003.v01caedl.manulife.com:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2-batch?tez.queue.name=inv

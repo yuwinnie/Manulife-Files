@@ -1,0 +1,22 @@
+Details of package installed
+PyGments
+RobotFramework==3.0.4 - 
+RobotFramework-requests - Robot Framework keyword library wrapper around requests
+RobotFramework-seleniumlibrary - Web testing library for Robot Framework
+RobotFramework-difflibrary - Robot Framework keyword library for textual diffing
+RobotFramework-excellib - Robot Framework library for working with Excel documents, based on openpyxl
+RobotFramework-databaselibrary - Database utility library for Robot Framework
+RobotFramework-jsonlibrary - robotframework-jsonlibrary is a Robot Framework test library for manipulating JSON Object. You can manipulate your JSON object using JSONPath
+RestInstance - Robot Framework library for RESTful JSON APIs
+Xlutils - Utilities for working with Excel files that require both xlrd and xlwt
+Xlsxwriter - XlsxWriter is a Python module for creating Excel XLSX files.
+OpenPyXl - A Python library to read/write Excel 2010 xlsx/xlsm files
+PyMssl - DB-API interface to Microsoft SQL Server for Python. (new Cython-based version)
+cx_Oracle - Python extension module that enables access to Oracle Database.
+PyPerclip - is a cross-platform Python module for copy and paste clipboard functions.
+Pandas - pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
+Pandasql - pandasql allows you to query pandas DataFrames using SQL syntax. 
+PyArrow - Python library for Apache Arrow
+Kafka-Python - Pure Python client for Apache Kafka
+Django-imppirt-export - django-import-export is a Django application and library for importing and exporting data with included admin integration
+Djantfo-report-builder - Django Report Builder is a GUI for Django ORM. Build custom queries and display results.

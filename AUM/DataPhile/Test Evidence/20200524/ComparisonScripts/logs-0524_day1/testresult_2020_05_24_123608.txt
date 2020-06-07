@@ -1,0 +1,106 @@
+Automation Test Run Start Time  2020_05_24_123608
+
+01_ComparisonScripts_actran.spark
+
+Test Case 01_ComparisonScripts_actran.spark  Execution Start Time:  2020_05_24_123608
+Test Case 01_ComparisonScripts_actran.spark  Execution End Time:    2020_05_24_124127
+Test case 01_ComparisonScripts_actran.spark  is passed.
+
+02_ComparisonScripts_gngnco.spark
+
+Test Case 02_ComparisonScripts_gngnco.spark  Execution Start Time:  2020_05_24_124127
+Test Case 02_ComparisonScripts_gngnco.spark  Execution End Time:    2020_05_24_124339
+Test case 02_ComparisonScripts_gngnco.spark  is passed.
+
+03_ComparisonScripts_mfclac.spark
+
+Test Case 03_ComparisonScripts_mfclac.spark  Execution Start Time:  2020_05_24_124340
+Test Case 03_ComparisonScripts_mfclac.spark  Execution End Time:    2020_05_24_125133
+Test case 03_ComparisonScripts_mfclac.spark  is passed.
+
+04_ComparisonScripts_mfacct.spark
+
+Test Case 04_ComparisonScripts_mfacct.spark  Execution Start Time:  2020_05_24_125133
+Test Case 04_ComparisonScripts_mfacct.spark  Execution End Time:    2020_05_24_125217
+Test case 04_ComparisonScripts_mfacct.spark  is passed.
+
+05_ComparisonScripts_mfrr.spark
+
+Test Case 05_ComparisonScripts_mfrr.spark  Execution Start Time:  2020_05_24_125217
+Test Case 05_ComparisonScripts_mfrr.spark  Execution End Time:    2020_05_24_125316
+Test case 05_ComparisonScripts_mfrr.spark  is passed.
+
+06_ComparisonScripts_esmgr.spark
+
+Test Case 06_ComparisonScripts_esmgr.spark  Execution Start Time:  2020_05_24_125316
+Test Case 06_ComparisonScripts_esmgr.spark  Execution End Time:    2020_05_24_125406
+Test case 06_ComparisonScripts_esmgr.spark  is passed.
+
+07_ComparisonScripts_acpos.spark
+
+Test Case 07_ComparisonScripts_acpos.spark  Execution Start Time:  2020_05_24_125406
+Test Case 07_ComparisonScripts_acpos.spark  Execution End Time:    2020_05_24_125644
+Test case 07_ComparisonScripts_acpos.spark  is passed.
+
+08_ComparisonScripts_gnexch.spark
+
+Test Case 08_ComparisonScripts_gnexch.spark  Execution Start Time:  2020_05_24_125644
+Test Case 08_ComparisonScripts_gnexch.spark  Execution End Time:    2020_05_24_125726
+Test case 08_ComparisonScripts_gnexch.spark  is passed.
+
+09_ComparisonScripts_tpkptl.spark
+
+Test Case 09_ComparisonScripts_tpkptl.spark  Execution Start Time:  2020_05_24_125726
+Test Case 09_ComparisonScripts_tpkptl.spark  Execution End Time:    2020_05_24_125814
+Test case 09_ComparisonScripts_tpkptl.spark  is passed.
+
+10_ComparisonScripts_mfclcl.spark
+
+Test Case 10_ComparisonScripts_mfclcl.spark  Execution Start Time:  2020_05_24_125814
+Test Case 10_ComparisonScripts_mfclcl.spark  Execution End Time:    2020_05_24_125854
+Test case 10_ComparisonScripts_mfclcl.spark  is passed.
+
+11_ComparisonScripts_mfsc.spark
+
+Test Case 11_ComparisonScripts_mfsc.spark  Execution Start Time:  2020_05_24_125854
+Test Case 11_ComparisonScripts_mfsc.spark  Execution End Time:    2020_05_24_130537
+Test case 11_ComparisonScripts_mfsc.spark  is passed.
+
+12_ComparisonScripts_tpcont.spark
+
+Test Case 12_ComparisonScripts_tpcont.spark  Execution Start Time:  2020_05_24_130537
+Test Case 12_ComparisonScripts_tpcont.spark  Execution End Time:    2020_05_24_130646
+Test case 12_ComparisonScripts_tpcont.spark  is passed.
+
+13_ComparisonScripts_mfbr.spark
+
+Test Case 13_ComparisonScripts_mfbr.spark  Execution Start Time:  2020_05_24_130646
+Test Case 13_ComparisonScripts_mfbr.spark  Execution End Time:    2020_05_24_130731
+Test case 13_ComparisonScripts_mfbr.spark  is passed.
+
+14_ComparisonScripts_mfcl.spark
+
+Test Case 14_ComparisonScripts_mfcl.spark  Execution Start Time:  2020_05_24_130731
+Test Case 14_ComparisonScripts_mfcl.spark  Execution End Time:    2020_05_24_130907
+Test case 14_ComparisonScripts_mfcl.spark  is passed.
+
+15_ComparisonScripts_mfrrus.spark
+
+Test Case 15_ComparisonScripts_mfrrus.spark  Execution Start Time:  2020_05_24_130907
+Test Case 15_ComparisonScripts_mfrrus.spark  Execution End Time:    2020_05_24_130946
+Test case 15_ComparisonScripts_mfrrus.spark  is passed.
+
+16_ComparisonScripts_gncode.spark
+
+Test Case 16_ComparisonScripts_gncode.spark  Execution Start Time:  2020_05_24_130946
+Test Case 16_ComparisonScripts_gncode.spark  Execution End Time:    2020_05_24_131113
+Test case 16_ComparisonScripts_gncode.spark  is failed.
+
+Automation Test Run End Time:  2020_05_24_131113
+
+###########################################
+Automation Test Run Result Summary:
+Total test cases have been executed:  16
+Total test cases have been failed  :  1
+Total test cases have been passed  :  15
+###########################################

@@ -1,0 +1,79 @@
+Warning: /usr/hdp/2.6.5.149-2/accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+20/05/24 10:52:23 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6.2.6.5.149-2
+20/05/24 10:52:25 WARN sqoop.ConnFactory: Parameter --driver is set to an explicit driver however appropriate connection manager is not being set (via --connection-manager). Sqoop is going to fall back to org.apache.sqoop.manager.GenericJdbcManager. Please specify explicitly which connection manager should be used next time.
+20/05/24 10:52:25 INFO manager.SqlManager: Using default fetchSize of 1000
+20/05/24 10:52:25 INFO tool.CodeGenTool: Beginning code generation
+20/05/24 10:52:26 INFO manager.SqlManager: Executing SQL statement: SELECT  a.*,'MSISI' as brokder_code FROM  PUB.gngnco a  where  (1 = 0) 
+20/05/24 10:52:26 INFO manager.SqlManager: Executing SQL statement: SELECT  a.*,'MSISI' as brokder_code FROM  PUB.gngnco a  where  (1 = 0) 
+20/05/24 10:52:26 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /usr/hdp/2.6.5.149-2/hadoop-mapreduce
+Note: /tmp/sqoop-invaumsvcqa/compile/38fcb763a4ae60fefcfb8c33ccca978f/QueryResult.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+20/05/24 10:52:29 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-invaumsvcqa/compile/38fcb763a4ae60fefcfb8c33ccca978f/QueryResult.jar
+20/05/24 10:52:29 INFO mapreduce.ImportJobBase: Beginning query import.
+20/05/24 10:52:29 INFO mapreduce.DataDrivenImportJob: Enabling relaxed (read uncommitted) transaction isolation for imports
+20/05/24 10:52:29 INFO client.AHSProxy: Connecting to Application History server at azcedlmstv002.v01caedl.manulife.com/10.237.20.9:10200
+20/05/24 10:52:29 INFO hdfs.DFSClient: Created HDFS_DELEGATION_TOKEN token 3365104 for invaumsvcqa on 10.237.20.8:8020
+20/05/24 10:52:29 INFO security.TokenCache: Got dt for hdfs://azcedlmstv001.v01caedl.manulife.com:8020; Kind: HDFS_DELEGATION_TOKEN, Service: 10.237.20.8:8020, Ident: (HDFS_DELEGATION_TOKEN token 3365104 for invaumsvcqa)
+20/05/24 10:52:29 INFO security.TokenCache: Got dt for hdfs://azcedlmstv001.v01caedl.manulife.com:8020; Kind: kms-dt, Service: 10.237.20.10:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590331949687, maxDate=1590936749687, sequenceNumber=3098, masterKeyId=2)
+20/05/24 10:52:29 INFO client.RequestHedgingRMFailoverProxyProvider: Looking for the active RM in [rm2, rm1]...
+20/05/24 10:52:29 INFO client.RequestHedgingRMFailoverProxyProvider: Found active RM [rm2]
+20/05/24 10:52:29 INFO security.TokenCache: Got dt for hdfs://azcedlmstv001.v01caedl.manulife.com:8020; Kind: kms-dt, Service: 10.237.20.11:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590331949832, maxDate=1590936749832, sequenceNumber=2774, masterKeyId=2)
+20/05/24 10:52:34 INFO db.DBInputFormat: Using read uncommited transaction isolation
+20/05/24 10:52:34 INFO db.DataDrivenDBInputFormat: BoundingValsQuery: SELECT MIN(fst_bal), MAX(fst_bal) FROM PUB.gngnco WHERE fst_bal IN (SELECT fst_bal FROM PUB.gngnco)
+20/05/24 10:52:34 INFO db.IntegerSplitter: Split size: 0; Num splits: 10 from: 1 to: 9
+20/05/24 10:52:35 INFO mapreduce.JobSubmitter: number of splits:9
+20/05/24 10:52:35 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1590256180930_0957
+20/05/24 10:52:35 INFO mapreduce.JobSubmitter: Kind: kms-dt, Service: 10.237.20.10:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590331949687, maxDate=1590936749687, sequenceNumber=3098, masterKeyId=2)
+20/05/24 10:52:35 INFO mapreduce.JobSubmitter: Kind: HDFS_DELEGATION_TOKEN, Service: 10.237.20.8:8020, Ident: (HDFS_DELEGATION_TOKEN token 3365104 for invaumsvcqa)
+20/05/24 10:52:35 INFO mapreduce.JobSubmitter: Kind: kms-dt, Service: 10.237.20.11:9292, Ident: (owner=invaumsvcqa, renewer=yarn, realUser=, issueDate=1590331949832, maxDate=1590936749832, sequenceNumber=2774, masterKeyId=2)
+20/05/24 10:52:36 INFO impl.TimelineClientImpl: Timeline service address: http://azcedlmstv002.v01caedl.manulife.com:8188/ws/v1/timeline/
+20/05/24 10:52:36 INFO impl.YarnClientImpl: Submitted application application_1590256180930_0957
+20/05/24 10:52:36 INFO mapreduce.Job: The url to track the job: http://azcedlmstv001.v01caedl.manulife.com:8088/proxy/application_1590256180930_0957/
+20/05/24 10:52:36 INFO mapreduce.Job: Running job: job_1590256180930_0957
+20/05/24 10:52:49 INFO mapreduce.Job: Job job_1590256180930_0957 running in uber mode : false
+20/05/24 10:52:49 INFO mapreduce.Job:  map 0% reduce 0%
+20/05/24 10:53:00 INFO mapreduce.Job:  map 33% reduce 0%
+20/05/24 10:53:01 INFO mapreduce.Job:  map 67% reduce 0%
+20/05/24 10:53:02 INFO mapreduce.Job:  map 100% reduce 0%
+20/05/24 10:53:03 INFO mapreduce.Job: Job job_1590256180930_0957 completed successfully
+20/05/24 10:53:03 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=1695051
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=4689
+		HDFS: Number of bytes written=344
+		HDFS: Number of read operations=36
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=18
+	Job Counters 
+		Launched map tasks=9
+		Other local map tasks=9
+		Total time spent by all maps in occupied slots (ms)=86426
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=86426
+		Total vcore-milliseconds taken by all map tasks=86426
+		Total megabyte-milliseconds taken by all map tasks=354000896
+	Map-Reduce Framework
+		Map input records=2
+		Map output records=2
+		Input split bytes=937
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=510
+		CPU time spent (ms)=29720
+		Physical memory (bytes) snapshot=3784814592
+		Virtual memory (bytes) snapshot=49916641280
+		Total committed heap usage (bytes)=4647288832
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=344
+20/05/24 10:53:03 INFO mapreduce.ImportJobBase: Transferred 344 bytes in 34.6509 seconds (9.9276 bytes/sec)
+20/05/24 10:53:03 INFO mapreduce.ImportJobBase: Retrieved 2 records.
+20/05/24 10:53:03 INFO util.AppendUtils: Appending to directory process_date=2020-05-02
+20/05/24 10:53:03 INFO util.AppendUtils: Using found partition 9

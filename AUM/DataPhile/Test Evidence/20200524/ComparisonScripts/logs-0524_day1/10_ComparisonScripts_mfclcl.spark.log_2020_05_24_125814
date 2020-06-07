@@ -1,0 +1,38 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Spark context Web UI available at http://azcedledgev001.v01caedl.manulife.com:4040
+Spark context available as 'sc' (master = local[*], app id = local-1590339506039).
+Spark session available as 'spark'.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 2.3.0.2.6.5.149-2
+      /_/
+         
+Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_241)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> val t_process_date = "2020-05-24"
+t_process_date: String = 2020-05-24
+
+scala> val s_process_date = "2020-05-02"
+s_process_date: String = 2020-05-02
+
+scala> :load '10_ComparisonScripts_mfclcl.spark' 
+Loading 10_ComparisonScripts_mfclcl.spark...
+r1: org.apache.spark.sql.DataFrame = [class: string, descr: string ... 10 more fields]
+r2: org.apache.spark.sql.DataFrame = [class: string, descr: string ... 10 more fields]
+diff: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [class: string, descr: string ... 10 more fields]
+[Stage 0:>                                                         (0 + 8) / 10][Stage 0:>                 (0 + 8) / 10][Stage 1:>                  (0 + 0) / 1][Stage 0:================> (9 + 1) / 10][Stage 1:>                  (0 + 1) / 1][Stage 1:>                                                          (0 + 1) / 1][Stage 2:====>                                                   (16 + 9) / 200][Stage 2:===========>                                            (41 + 9) / 200][Stage 2:=================>                                      (64 + 8) / 200][Stage 2:=========================>                              (90 + 8) / 200][Stage 2:===============================>                       (115 + 9) / 200][Stage 2:======================================>                (141 + 9) / 200][Stage 2:==============================================>        (168 + 8) / 200][Stage 2:====================================================>  (191 + 8) / 200][Stage 3:=================================>                     (121 + 8) / 200][Stage 3:================================================>      (176 + 8) / 200]                                                                                Count with mismatches = 0
+[Stage 7:=====================>                                  (76 + 8) / 200][Stage 7:=============================>                         (108 + 8) / 200][Stage 7:=======================================>               (144 + 8) / 200][Stage 7:================================================>      (178 + 8) / 200][Stage 8:==============================================>        (168 + 9) / 200]                                                                                res1: Long = 0
+[Stage 12:===========================>                          (101 + 8) / 200][Stage 12:=====================================>                (138 + 8) / 200][Stage 12:=============================================>        (169 + 8) / 200]                                                                                +-----+-----+-------+-------+---------+--------+----------+-------+--------+--------+----------+-----------+
+|class|descr|cl_type|last_dt|last_time|last_usr|table_type|rpt_typ|seg_proc|reg_type|recip_type|broker_code|
++-----+-----+-------+-------+---------+--------+----------+-------+--------+--------+----------+-----------+
++-----+-----+-------+-------+---------+--------+----------+-------+--------+--------+----------+-----------+
+
+
+scala> 
+
+scala> :quit

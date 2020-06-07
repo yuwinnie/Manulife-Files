@@ -1,0 +1,38 @@
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Spark context Web UI available at http://azcedledgev001.v01caedl.manulife.com:4040
+Spark context available as 'sc' (master = local[*], app id = local-1590342872755).
+Spark session available as 'spark'.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 2.3.0.2.6.5.149-2
+      /_/
+         
+Using Scala version 2.11.8 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_241)
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala> val t_process_date = "2020-05-17"
+t_process_date: String = 2020-05-17
+
+scala> val s_process_date = "2020-05-01"
+s_process_date: String = 2020-05-01
+
+scala> :load '15_ComparisonScripts_mfrrus.spark' 
+Loading 15_ComparisonScripts_mfrrus.spark...
+r1: org.apache.spark.sql.DataFrame = [usr: string, rr: string ... 5 more fields]
+r2: org.apache.spark.sql.DataFrame = [usr: string, rr: string ... 5 more fields]
+diff: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [usr: string, rr: string ... 5 more fields]
+[Stage 0:>                 (0 + 8) / 30][Stage 1:>                  (0 + 0) / 2][Stage 0:>                 (1 + 8) / 30][Stage 1:>                  (0 + 0) / 2][Stage 0:==>               (4 + 8) / 30][Stage 1:>                  (0 + 0) / 2][Stage 0:====>             (7 + 8) / 30][Stage 1:>                  (0 + 0) / 2][Stage 0:=====>            (9 + 8) / 30][Stage 1:>                  (0 + 0) / 2][Stage 0:=====>           (10 + 8) / 30][Stage 1:>                  (0 + 0) / 2][Stage 0:======>          (11 + 8) / 30][Stage 1:>                  (0 + 0) / 2][Stage 0:=========>       (17 + 8) / 30][Stage 1:>                  (0 + 0) / 2][Stage 0:==============>  (26 + 4) / 30][Stage 1:>                  (0 + 2) / 2][Stage 1:>                                                          (0 + 2) / 2][Stage 1:=============================>                             (1 + 1) / 2][Stage 2:==>                                                      (8 + 8) / 200][Stage 2:======>                                                 (23 + 8) / 200][Stage 2:============>                                           (43 + 8) / 200][Stage 2:=================>                                      (64 + 9) / 200][Stage 2:========================>                               (89 + 8) / 200][Stage 2:================================>                      (119 + 8) / 200][Stage 2:=======================================>               (143 + 8) / 200][Stage 2:============================================>          (162 + 8) / 200][Stage 2:==================================================>    (184 + 8) / 200][Stage 3:==============================================>        (170 + 8) / 200]                                                                                Count with mismatches = 0
+[Stage 5:>                 (1 + 8) / 30][Stage 6:>                  (0 + 0) / 2][Stage 5:===>              (5 + 8) / 30][Stage 6:>                  (0 + 0) / 2][Stage 5:=====>            (9 + 8) / 30][Stage 6:>                  (0 + 0) / 2][Stage 5:=====>           (10 + 8) / 30][Stage 6:>                  (0 + 0) / 2][Stage 5:======>          (11 + 8) / 30][Stage 6:>                  (0 + 0) / 2][Stage 5:=======>         (14 + 8) / 30][Stage 6:>                  (0 + 0) / 2][Stage 5:===========>     (21 + 8) / 30][Stage 6:>                  (0 + 0) / 2][Stage 5:================>(29 + 1) / 30][Stage 6:>                  (0 + 2) / 2][Stage 6:>                                                          (0 + 2) / 2][Stage 7:==========>                                             (37 + 8) / 200][Stage 7:===============>                                        (57 + 8) / 200][Stage 7:=========================>                              (90 + 8) / 200][Stage 7:==================================>                    (127 + 8) / 200][Stage 7:============================================>          (162 + 8) / 200][Stage 7:==================================================>    (185 + 9) / 200][Stage 8:=====================================>                 (135 + 8) / 200][Stage 8:=============================================>         (165 + 8) / 200][Stage 8:======================================================>(197 + 3) / 200]                                                                                res1: Long = 0
+[Stage 10:>                 (0 + 2) / 2][Stage 11:>                (0 + 6) / 30][Stage 10:>                 (0 + 2) / 2][Stage 11:==>              (4 + 6) / 30][Stage 10:>                 (0 + 2) / 2][Stage 11:===>             (7 + 6) / 30][Stage 11:=============>                                           (7 + 8) / 30][Stage 11:==================>                                     (10 + 8) / 30][Stage 11:====================>                                   (11 + 8) / 30][Stage 11:==========================>                             (14 + 8) / 30][Stage 11:================================================>       (26 + 4) / 30][Stage 12:========================>                              (88 + 8) / 200][Stage 12:=================================>                    (123 + 8) / 200][Stage 12:==========================================>           (158 + 8) / 200][Stage 12:==================================================>   (186 + 8) / 200]                                                                                +---+---+-------+---------+--------+-------+-----------+
+|usr|rr |last_dt|last_time|last_usr|sys_gen|broker_code|
++---+---+-------+---------+--------+-------+-----------+
++---+---+-------+---------+--------+-------+-----------+
+
+
+scala> 
+
+scala> :quit
